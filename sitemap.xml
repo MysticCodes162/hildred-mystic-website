@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://YOUR-URL/index.html</loc>
-</url>
-<url>
-<loc>https://YOUR-URL/mystic.html</loc>
-</url>
+  <url>
+    <loc>https://mysticcodes162.github.io/hildred-mystic-website/</loc>
+  </url>
+  <url>
+    <loc>https://mysticcodes162.github.io/hildred-mystic-website/mystic.html</loc>
+  </url>
 </urlset>

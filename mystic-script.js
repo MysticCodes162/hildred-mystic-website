@@ -1,4 +1,5 @@
-function toggleFact(el) {
-const content = el.querySelector('.fact-content');
-content.style.display = content.style.display === 'block' ? 'none' : 'block';
+function toggleFact(el){
+  const a = el.querySelector('.a');
+  if(!a) return;
+  a.style.display = a.style.display === 'block' ? 'none' : 'block';
 }

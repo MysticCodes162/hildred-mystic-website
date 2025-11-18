@@ -1,62 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Hildred Feed</title>
-<meta name="description" content="A futuristic social-style page by Hildred Mathews." />
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hildred — Nexus</title>
+  <meta name="description" content="Hildred's futuristic social feed and mystic portal." />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="topbar">
-<div class="logo">HildredNet</div>
-<input type="text" class="search" placeholder="Search HildredNet..." />
-<div class="menu">
-<span>Home</span>
-<span>Mystic</span>
-<span>Profile</span>
-</div>
-</nav>
+  <div id="app">
+    <aside class="hud-left">
+      <div class="logo">HILDRED<span class="dot">•</span></div>
+      <nav>
+        <button class="nav-btn active">Feed</button>
+        <button class="nav-btn">Mystic</button>
+        <button class="nav-btn">Profile</button>
+        <button class="nav-btn">Collections</button>
+      </nav>
 
+      <div class="presence">
+        <div class="avatar"><img src="https://via.placeholder.com/72" alt="pfp"></div>
+        <div class="meta">
+          <div class="name">Hildred Mathews</div>
+          <div class="role">Creative Writer • Content Creator</div>
+        </div>
+      </div>
 
-<div class="layout">
-<!-- Left Sidebar -->
-<aside class="sidebar-left">
-<div class="profile-box">
-<img src="https://via.placeholder.com/80" class="pfp" />
-<h3>Hildred Mathews</h3>
-<p>Creative Writer • Content Creator</p>
-</div>
-<ul class="side-links">
-<li>Feed</li>
-<li>Messages</li>
-<li>Marketplace</li>
-<li>Settings</li>
-</ul>
-</aside>
+      <div class="hud-footer">© 2025 MysticCodes162</div>
+    </aside>
 
+    <main class="main-area">
+      <header class="topbar">
+        <div class="search-wrap">
+          <input id="globalSearch" placeholder="Search the Nexus..." />
+        </div>
+        <div class="top-actions">
+          <button class="icon">⚙</button>
+          <button class="icon">🔔</button>
+          <button class="icon profile">👤</button>
+        </div>
+      </header>
 
-<!-- Main Feed -->
-<main class="feed">
-<div class="post-box">
-<textarea id="content" placeholder="What's on your mind, Hildred?"></textarea>
-<button onclick="addPost()">Post</button>
-</div>
+      <section class="compose-card glass">
+        <textarea id="content" placeholder="Transmit a thought to the Nexus..."></textarea>
+        <div class="compose-actions">
+          <div class="hint">Share something creative</div>
+          <button class="post-btn" onclick="addPost()">Transmit</button>
+        </div>
+      </section>
 
+      <section id="posts" class="feed-list"></section>
+    </main>
 
-<div id="posts"></div>
-</main>
+    <aside class="hud-right">
+      <div class="panel glass">
+        <h4>Today</h4>
+        <div class="stat">Mood: <strong>Creative</strong></div>
+        <div class="stat">Streak: <strong>7</strong></div>
+      </div>
 
+      <div class="panel glass">
+        <h4>Mystic Portal</h4>
+        <a class="link" href="mystic.html">Enter Mystic Facts</a>
+      </div>
 
-<!-- Right Sidebar -->
-<aside class="sidebar-right">
-<h3>Mystic Links</h3>
-<a href="mystic.html">Mystic Facts Page</a>
-<p>© 2025 HildredNet</p>
-</aside>
-</div>
+      <div class="panel glass small">
+        <h5>Shortcuts</h5>
+        <ul>
+          <li>Library</li>
+          <li>Design Board</li>
+          <li>Analytics</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
 
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
