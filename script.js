@@ -1,21 +1,27 @@
 const postsContainer = document.getElementById('posts');
 
+
 function addPost() {
-  const title = document.getElementById('title').value.trim();
-  const content = document.getElementById('content').value.trim();
+const title = document.getElementById('title').value.trim();
+const content = document.getElementById('content').value.trim();
 
-  if (!title || !content) return;
 
-  const post = document.createElement('div');
-  post.className = 'post';
+if (!title || !content) return;
 
-  post.innerHTML = `
-    <div class="post-title" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">${title}</div>
-    <div class="post-content">${content}</div>
-  `;
 
-  postsContainer.prepend(post);
+const post = document.createElement('div');
+post.className = 'post';
 
-  document.getElementById('title').value = '';
-  document.getElementById('content').value = '';
+
+post.innerHTML = `
+<div class="post-title" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">${title}</div>
+<div class="post-content">${content}</div>
+`;
+
+
+postsContainer.prepend(post);
+
+
+document.getElementById('title').value = '';
+document.getElementById('content').value = '';
 }

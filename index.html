@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Blog</title>
-  <meta name="description" content="A creative blog with mystical themes, facts, and personal content by Hildred Mathews." />
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hildred Feed</title>
+<meta name="description" content="A futuristic social-style page by Hildred Mathews." />
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>My Blog</h1>
-  </header>
+<nav class="topbar">
+<div class="logo">HildredNet</div>
+<input type="text" class="search" placeholder="Search HildredNet..." />
+<div class="menu">
+<span>Home</span>
+<span>Mystic</span>
+<span>Profile</span>
+</div>
+</nav>
 
-  <div class="container">
-    <h2>Posts</h2>
-    <div id="posts"></div>
 
-    <div class="new-post">
-      <h2>Create a New Post</h2>
-      <input type="text" id="title" placeholder="Post Title" />
-      <textarea id="content" rows="5" placeholder="Write your content here..."></textarea>
-      <button onclick="addPost()">Add Post</button>
-    </div>
+<div class="layout">
+<!-- Left Sidebar -->
+<aside class="sidebar-left">
+<div class="profile-box">
+<img src="https://via.placeholder.com/80" class="pfp" />
+<h3>Hildred Mathews</h3>
+<p>Creative Writer • Content Creator</p>
+</div>
+<ul class="side-links">
+<li>Feed</li>
+<li>Messages</li>
+<li>Marketplace</li>
+<li>Settings</li>
+</ul>
+</aside>
 
-    <div style="text-align:center; margin-top:20px;">
-      <a href="mystic.html" class="link">Go to Mystic Facts Page</a>
-    </div>
-  </div>
 
-  <footer>
-    © 2025 My Blog
-  </footer>
+<!-- Main Feed -->
+<main class="feed">
+<div class="post-box">
+<textarea id="content" placeholder="What's on your mind, Hildred?"></textarea>
+<button onclick="addPost()">Post</button>
+</div>
 
-  <script src="script.js"></script>
+
+<div id="posts"></div>
+</main>
+
+
+<!-- Right Sidebar -->
+<aside class="sidebar-right">
+<h3>Mystic Links</h3>
+<a href="mystic.html">Mystic Facts Page</a>
+<p>© 2025 HildredNet</p>
+</aside>
+</div>
+
+
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,63 +1,52 @@
 body {
-  margin: 0;
-  padding: 0;
-  background: #0a0a0a;
-  color: orange;
-  font-family: 'Trebuchet MS', sans-serif;
-}
-header {
-  text-align: center;
-  padding: 2rem;
-  font-size: 2.5rem;
-  color: orange;
-  text-shadow: 0 0 15px orange;
-  animation: glow 2s ease-in-out infinite alternate;
+text-shadow: 0 0 15px orange;
+animation: glow 2s ease-in-out infinite alternate;
 }
 @keyframes glow {
-  from { text-shadow: 0 0 10px orange; }
-  to { text-shadow: 0 0 25px orange; }
+from { text-shadow: 0 0 10px orange; }
+to { text-shadow: 0 0 25px orange; }
 }
 .container {
-  max-width: 900px;
-  margin: auto;
-  padding: 2rem;
+max-width: 900px;
+margin: auto;
+padding: 2rem;
 }
 .fact {
-  background: rgba(255,140,0,0.1);
-  padding: 1rem;
-  border-left: 4px solid orange;
-  margin-bottom: 1rem;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: .3s;
+background: rgba(255,140,0,0.1);
+padding: 1rem;
+border-left: 4px solid orange;
+margin-bottom: 1rem;
+cursor: pointer;
+border-radius: 8px;
+transition: .3s;
 }
 .fact-content {
-  display: none;
-  color: #ffd9a3;
-  margin-top: .5rem;
+display: none;
+color: #ffd9a3;
+margin-top: .5rem;
 }
 .bio {
-  background: rgba(255,140,0,0.15);
-  padding: 1.5rem;
-  border-radius: 10px;
-  animation: float 4s ease-in-out infinite;
+background: rgba(255,140,0,0.15);
+padding: 1.5rem;
+border-radius: 10px;
+animation: float 4s ease-in-out infinite;
 }
 @keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
-  100% { transform: translateY(0); }
+0% { transform: translateY(0); }
+50% { transform: translateY(-5px); }
+100% { transform: translateY(0); }
 }
 .link {
-  display: block;
-  text-align: center;
-  margin-top: 2rem;
-  color: orange;
-  text-decoration: none;
-  font-size: 1.2rem;
+display: block;
+text-align: center;
+margin-top: 2rem;
+color: orange;
+text-decoration: none;
+font-size: 1.2rem;
 }
 footer {
-  text-align: center;
-  padding: 1rem;
-  color: orange;
-  margin-top: 3rem;
+text-align: center;
+padding: 1rem;
+color: orange;
+margin-top: 3rem;
 }
