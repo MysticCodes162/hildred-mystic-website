@@ -1,13 +1,12 @@
-:root{--accent:#ff6a00;--panel:rgba(255,255,255,0.02);--muted:#cdb79a}
+:root{--accent:#ff6a00;--panel:rgba(255,255,255,0.03);--muted:#cdb79a}
 body{margin:0;font-family:Inter, sans-serif;background:linear-gradient(180deg,#040410,#071025);color:#fff}
 .portal{min-height:100vh;padding:48px}
 .portal-head{max-width:900px;margin:0 auto 24px auto;text-align:center}
 .portal-head h1{font-size:36px;color:var(--accent);text-shadow:0 0 18px rgba(255,106,0,0.18)}
-.portal-head .sub{color:var(--muted);margin-top:6px}
 .portal-main{max-width:900px;margin:18px auto;display:grid;grid-template-columns:1fr;gap:14px}
 .glass{background:var(--panel);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);backdrop-filter:blur(8px)}
 .bio h2{margin:0 0 8px 0}
-.fact{padding:12px;border-left:4px solid rgba(255,106,0,0.12);margin-bottom:10px;cursor:pointer}
-.fact .a{display:none;color:#ffd9a3;margin-top:8px}
+.facts .fact{padding:12px;border-left:4px solid rgba(255,106,0,0.12);margin-bottom:10px;cursor:pointer}
+.facts .fact .a{display:none;color:#ffd9a3;margin-top:8px}
 .portal-foot{text-align:center;margin-top:28px;color:var(--muted)}
 @media (max-width:600px){.portal{padding:18px}}
