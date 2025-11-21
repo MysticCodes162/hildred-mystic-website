@@ -1,12 +1,348 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Orange Cyberpunk (React)</title>
+    <title>Orange Cyberpunk — Hildred</title>
+
+    <style>
+      :root{
+        --bg-1:#070707;
+        --bg-2:#0f0b0c;
+        --panel:#0f1113cc;
+        --glass: rgba(255,255,255,0.03);
+        --accent:#ff7a00;
+        --accent-2:#ff9a33;
+        --muted:#a6a6a6;
+        --neon: 0 0 20px rgba(255,122,0,0.25), 0 0 60px rgba(255,122,0,0.06);
+        --radius:12px;
+        font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      }
+
+      html,body{height:100%;margin:0;background:
+        radial-gradient(1200px 600px at 10% 10%, rgba(255,122,0,0.03), transparent 10%),
+        linear-gradient(180deg,var(--bg-1),var(--bg-2));
+        color:#e7e7e7;
+        -webkit-font-smoothing:antialiased;
+        -moz-osx-font-smoothing:grayscale;
+      }
+
+      /* Layout */
+      #app{display:grid;grid-template-columns:260px 1fr 300px;gap:20px;padding:22px;height:100vh;box-sizing:border-box}
+      aside.hud-left, aside.hud-right, main.main-area{background:transparent}
+      .glass{
+        background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.25));
+        border: 1px solid rgba(255,122,0,0.08);
+        box-shadow: var(--neon);
+        border-radius:var(--radius);
+        padding:16px;
+        backdrop-filter: blur(6px) saturate(120%);
+      }
+
+      /* Left HUD */
+      .hud-left{display:flex;flex-direction:column;gap:18px}
+      .logo{font-weight:700;font-size:20px;letter-spacing:2px;color:var(--accent)}
+      .dot{color:var(--accent-2);margin-left:6px}
+      nav{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+      .nav-btn{
+        background:transparent;border:1px solid transparent;color:var(--muted);
+        padding:10px 12px;border-radius:10px;text-align:left;cursor:pointer;
+      }
+      .nav-btn.active{color:#fff;background:linear-gradient(90deg, rgba(255,122,0,0.06), rgba(255,154,51,0.02));border-color:rgba(255,122,0,0.12);box-shadow:0 4px 18px rgba(255,122,0,0.06) inset}
+      .presence{display:flex;gap:12px;align-items:center;padding:12px;border-radius:12px}
+      .avatar img{width:64px;height:64px;border-radius:8px;object-fit:cover;border:2px solid rgba(255,122,0,0.12)}
+      .name{font-weight:700;color:#fff}
+      .role{font-size:12px;color:var(--muted)}
+
+      .hud-footer{margin-top:auto;font-size:12px;color:var(--muted)}
+
+      /* Main area */
+      .main-area{display:flex;flex-direction:column;gap:18px}
+      .topbar{display:flex;align-items:center;justify-content:space-between;padding:12px}
+      .search-wrap{flex:1;max-width:780px;position:relative}
+      input#globalSearch{
+        width:100%;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);
+        background:rgba(0,0,0,0.35);color:#fff;outline:none;
+      }
+      .cmd-hint{position:absolute;right:12px;top:50%;transform:translateY(-50%);font-size:12px;color:var(--muted)}
+
+      .top-actions{display:flex;gap:8px}
+      .icon{background:transparent;border:1px solid rgba(255,255,255,0.03);padding:8px;border-radius:8px;color:var(--muted);cursor:pointer}
+
+      .section{padding:18px;display:none}
+      .section.show{display:block}
+      .compose-card{display:flex;flex-direction:column;gap:10px}
+      textarea#postInput{min-height:80px;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:rgba(0,0,0,0.35);color:#fff;resize:vertical}
+      .compose-actions{display:flex;justify-content:space-between;align-items:center}
+      .post-btn{background:linear-gradient(90deg,var(--accent),var(--accent-2));border:none;color:#111;padding:8px 12px;border-radius:10px;cursor:pointer;box-shadow:0 6px 20px rgba(255,122,0,0.12)}
+      .post-btn.small{padding:6px 10px;font-size:13px}
+
+      .feed-list{display:flex;flex-direction:column;gap:12px;margin-top:12px}
+      .post{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.18));padding:12px;border-radius:10px;border:1px solid rgba(255,122,0,0.06)}
+      .post .meta{display:flex;gap:10px;align-items:center}
+      .post .meta .who{font-weight:700;color:#fff}
+      .post .body{margin-top:8px;color:#ddd}
+
+      /* Mystic */
+      .portal-head h1{color:var(--accent);margin:0}
+      .typing-title{font-family: 'Segoe UI', Roboto, Arial;font-weight:700}
+
+      .bio{padding:14px}
+      .facts .fact{padding:10px;border-radius:8px;margin-top:8px;background:rgba(255,255,255,0.01);cursor:pointer}
+      .fact .q{font-weight:700;color:var(--accent)}
+      .fact .a{display:none;color:#ddd;margin-top:6px}
+      .fact.open .a{display:block}
+
+      /* Right HUD */
+      .hud-right{display:flex;flex-direction:column;gap:12px}
+      .panel h4{margin:0 0 8px 0;color:var(--accent)}
+      ul{padding-left:18px;margin:0;color:var(--muted)}
+      li{cursor:pointer;margin:4px 0}
+
+      /* Chat panel */
+      .chat-panel{position:fixed;right:26px;bottom:26px;width:360px;border-radius:12px;padding:0;overflow:hidden;display:none;z-index:60}
+      .chat-panel.show{display:flex;flex-direction:column}
+      #chatHeader{background:linear-gradient(90deg, var(--accent),var(--accent-2));padding:12px;color:#111;display:flex;justify-content:space-between;align-items:center;font-weight:700}
+      .chat-log{height:220px;overflow:auto;padding:12px;background:#050505;color:#ddd}
+      .chat-input{display:flex;padding:10px;background:rgba(0,0,0,0.6)}
+      .chat-input input{flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#fff;margin-right:8px}
+
+      /* small screens */
+      @media (max-width:980px){
+        #app{grid-template-columns: 1fr;grid-template-rows:auto 1fr auto;padding:12px;overflow:auto}
+        aside.hud-right{order:3}
+        aside.hud-left{order:1}
+      }
+    </style>
   </head>
+
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div id="app">
+      <aside class="hud-left">
+        <div class="logo">ORANGE<span class="dot">•</span>CYBER</div>
+
+        <nav>
+          <button class="nav-btn active" onclick="showSection('feed', this)">Feed</button>
+          <button class="nav-btn" onclick="showSection('mystic', this)">Mystic</button>
+          <button class="nav-btn" onclick="showSection('profile', this)">Profile</button>
+        </nav>
+
+        <div class="presence glass" style="margin-top:8px">
+          <div class="avatar"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=200&h=200&fit=crop" alt="pfp"></div>
+          <div class="meta">
+            <div class="name">Hildred Mathews</div>
+            <div class="role">Creative Writer • Content Creator</div>
+          </div>
+        </div>
+
+        <div class="hud-footer">© 2025 MysticCodes162</div>
+      </aside>
+
+      <main class="main-area">
+        <header class="topbar glass">
+          <div class="search-wrap">
+            <input id="globalSearch" placeholder="Search or type a command (try: mystic, feed, profile)"
+                   onkeydown="if(event.key==='Enter') handleCommand()" />
+            <div id="cmdHint" class="cmd-hint">Try: <span class="cmd-type">mystic</span></div>
+          </div>
+
+          <div class="top-actions">
+            <button class="icon" title="Settings">⚙</button>
+            <button class="icon" title="Notifications">🔔</button>
+            <button class="icon profile" title="Profile">👤</button>
+          </div>
+        </header>
+
+        <!-- FEED -->
+        <section id="feed" class="section glass show">
+          <div class="compose-card glass floating">
+            <textarea id="postInput" placeholder="Transmit a thought to the Nexus..."></textarea>
+            <div class="compose-actions">
+              <div class="hint">Share something creative</div>
+              <button class="post-btn" id="transmitBtn" onclick="createPost()">Transmit</button>
+            </div>
+          </div>
+
+          <div id="posts" class="feed-list"></div>
+        </section>
+
+        <!-- MYSTIC -->
+        <section id="mystic" class="section glass hidden">
+          <div class="portal-head">
+            <h1 class="typing-title">🔮 Mystic Portal</h1>
+            <p class="sub" style="color:var(--muted)">Insights, micro-interactions & bios</p>
+          </div>
+
+          <div class="portal-main" style="margin-top:12px;display:flex;gap:12px;flex-direction:column">
+            <section class="bio glass floating">
+              <h2>Hildred Mathews</h2>
+              <p><strong>Born:</strong> July 18, 2003</p>
+              <p><strong>Interests:</strong> Video games, apparel, sneakers</p>
+              <p><strong>Career:</strong> Creative Writer & Content Creator</p>
+            </section>
+
+            <section class="facts glass">
+              <h3 style="color:var(--accent)">Mutable Facts</h3>
+              <div class="fact" onclick="toggleFact(this)">
+                <div class="q">Cosmic Origin</div>
+                <div class="a">All matter is stardust — your atoms remember the cosmos.</div>
+              </div>
+
+              <div class="fact" onclick="toggleFact(this)">
+                <div class="q">Time & Emotion</div>
+                <div class="a">Time stretches when you are fully present; emotion modulates perception.</div>
+              </div>
+
+              <div class="fact" onclick="toggleFact(this)">
+                <div class="q">Dreamcraft</div>
+                <div class="a">Dreams are the brain's sandbox for narrative testing and creativity.</div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <!-- PROFILE -->
+        <section id="profile" class="section glass hidden">
+          <div class="profile-card glass floating">
+            <h2>Profile</h2>
+            <p><strong>Name:</strong> Hildred Mathews</p>
+            <p><strong>Role:</strong> Creative Writer & Content Creator</p>
+            <p><strong>Interests:</strong> Video games, apparel, sneakers</p>
+            <p><strong>Born:</strong> July 18, 2003</p>
+          </div>
+        </section>
+      </main>
+
+      <aside class="hud-right">
+        <div class="panel glass floating">
+          <h4>Today</h4>
+          <div class="stat">Mood: <strong style="color:var(--accent)">Creative</strong></div>
+          <div class="stat">Streak: <strong style="color:var(--accent)">7</strong></div>
+        </div>
+
+        <div class="panel glass">
+          <h4>Shortcuts</h4>
+          <ul>
+            <li onclick="showSection('feed')">Go to Feed</li>
+            <li onclick="showSection('mystic')">Open Mystic Portal</li>
+            <li onclick="showSection('profile')">Profile</li>
+          </ul>
+        </div>
+
+        <div class="panel glass">
+          <h4>Quick Chat</h4>
+          <button onclick="toggleChat()" class="post-btn small">Open AI Chat</button>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Chat Panel -->
+    <div class="chat-panel glass" id="chatPanel" aria-hidden="true">
+      <div id="chatHeader">
+        <div class="chat-title">Nexus Chat</div>
+        <div id="typingIndicator" class="typing-indicator hidden" style="opacity:0.85"><span>•</span><span>•</span><span>•</span></div>
+      </div>
+      <div id="chatLog" class="chat-log"></div>
+      <div class="chat-input">
+        <input id="chatInput" placeholder="Ask the Nexus..." autocomplete="off" />
+        <button onclick="sendMessage()" class="post-btn small">Send</button>
+      </div>
+    </div>
+
+    <script>
+      // Simple interactive behaviors to mirror original app
+      function showSection(id, btn){
+        document.querySelectorAll('.section').forEach(s => s.classList.remove('show'));
+        document.getElementById(id)?.classList.add('show');
+
+        document.querySelectorAll('.nav-btn').forEach(n => n.classList.remove('active'));
+        if(btn) btn.classList.add('active');
+        // ensure mobile scroll to top of main area
+        window.scrollTo({top:0,behavior:'smooth'});
+      }
+
+      function toggleFact(el){
+        el.classList.toggle('open');
+      }
+
+      function toggleChat(){
+        const p = document.getElementById('chatPanel');
+        const shown = p.classList.toggle('show');
+        p.setAttribute('aria-hidden', (!shown).toString());
+      }
+
+      function sendMessage(){
+        const input = document.getElementById('chatInput');
+        const txt = input.value.trim();
+        if(!txt) return;
+        const log = document.getElementById('chatLog');
+        const el = document.createElement('div');
+        el.style.marginBottom = '8px';
+        el.innerHTML = '<div style="font-weight:700;color:var(--accent);">You</div><div style="color:#ddd">'+escapeHtml(txt)+'</div>';
+        log.appendChild(el); log.scrollTop = log.scrollHeight;
+        input.value='';
+        // fake assistant response
+        setTimeout(()=> {
+          const r = document.createElement('div');
+          r.style.marginBottom = '8px';
+          r.innerHTML = '<div style="font-weight:700;color:var(--muted)">Nexus</div><div style="color:#ddd">Echo: '+escapeHtml(txt)+'</div>';
+          log.appendChild(r); log.scrollTop = log.scrollHeight;
+        }, 700);
+      }
+
+      function createPost(){
+        const ta = document.getElementById('postInput');
+        const txt = ta.value.trim();
+        if(!txt) return;
+        const posts = document.getElementById('posts');
+        const node = document.createElement('div');
+        node.className = 'post';
+        node.innerHTML = '<div class="meta"><div class="who">Hildred</div><div style="margin-left:auto;color:var(--muted);font-size:12px">'+new Date().toLocaleString()+'</div></div><div class="body">'+escapeHtml(txt)+'</div>';
+        posts.prepend(node);
+        ta.value='';
+      }
+
+      function handleCommand(){
+        const input = document.getElementById('globalSearch');
+        const cmd = input.value.trim().toLowerCase();
+        if(!cmd) return;
+        if(cmd.includes('mystic')) showSection('mystic');
+        else if(cmd.includes('feed')) showSection('feed');
+        else if(cmd.includes('profile')) showSection('profile');
+        else {
+          // search posts
+          const posts = [...document.querySelectorAll('.post .body')];
+          const matched = posts.filter(p => p.textContent.toLowerCase().includes(cmd));
+          if(matched.length){
+            matched[0].scrollIntoView({behavior:'smooth',block:'center'});
+            matched[0].style.transition='background 0.4s';
+            matched[0].style.background='linear-gradient(90deg, rgba(255,122,0,0.06), transparent)';
+            setTimeout(()=> matched[0].style.background='transparent',1200);
+          } else {
+            alert('No results. Try: feed, mystic, profile');
+          }
+        }
+      }
+
+      function escapeHtml(s){
+        return s.replace(/[&<>\"']/g, function(m){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'': '&#39;'}[m]; });
+      }
+
+      // small initialization: sample posts
+      (function init(){
+        const sample = [
+          'Welcome to the orange cyberpunk Nexus. Transmit your thoughts.',
+          'Night sky lit in neon. Sneakers and synthwave.',
+          'Dreamcraft entry: write a short game pitch.'
+        ];
+        const posts = document.getElementById('posts');
+        sample.forEach(t=>{
+          const node = document.createElement('div');
+          node.className='post';
+          node.innerHTML = '<div class="meta"><div class="who">Hildred</div><div style="margin-left:auto;color:var(--muted);font-size:12px">'+new Date().toLocaleString()+'</div></div><div class="body">'+escapeHtml(t)+'</div>';
+          posts.appendChild(node);
+        });
+      })();
+    </script>
   </body>
 </html>
