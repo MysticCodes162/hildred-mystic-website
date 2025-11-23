@@ -1,34 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hildred Mystic Website</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hildred’s Futuristic Blog</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #0b0b0d;
+            color: white;
+        }
+
+        /* NAVIGATION */
+        nav {
+            width: 100%;
+            background: #111;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            border-bottom: 1px solid #333;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ff9d00;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffd26b;
+        }
+
+        /* MAIN CONTENT */
+        .container {
+            max-width: 950px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #16161a;
+            border-radius: 10px;
+            border: 1px solid #222;
+        }
+
+        h1, h2 {
+            color: #ffb341;
+        }
+
+        .blog-link {
+            margin: 20px 0;
+            padding: 15px 20px;
+            background: #1e1e23;
+            border: 1px solid #333;
+            border-radius: 8px;
+        }
+
+        .blog-link a {
+            text-decoration: none;
+            color: #ff9d00;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .blog-link a:hover {
+            color: #ffd26b;
+        }
+    </style>
 </head>
+
 <body>
-  <header>
+
+    <!-- NAVIGATION -->
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
+        <ul>
+            <li><a href="#blog1">Blog 1</a></li>
+            <li><a href="#blog2">Blog 2</a></li>
+            <li><a href="#blog3">Blog 3</a></li>
+            <li><a href="#blog4">Blog 4</a></li>
+            <li><a href="#blog5">Blog 5</a></li>
+            <li><a href="#blog6">Blog 6</a></li>
+        </ul>
     </nav>
-  </header>
 
-  <main>
-    <h1>Welcome to Hildred Mystic</h1>
-    <p>Your futuristic orange & black website experience starts here.</p>
+    <div class="container">
+        <h1>Welcome to Hildred’s Futuristic Blog</h1>
+        <p>Choose any blog below:</p>
 
-    <section class="blog-preview">
-      <h2>Latest Blog Posts</h2>
-    </section>
-  </main>
+        <!-- BLOG LINK SECTIONS -->
+        <div class="blog-link"><a href="#blog1">Blog 1 – Why Most People Fail to Get Rich</a></div>
+        <div class="blog-link"><a href="#blog2">Blog 2 – The Real Reason You’re Still Stuck</a></div>
+        <div class="blog-link"><a href="#blog3">Blog 3 – How the Top 1% Think Differently</a></div>
+        <div class="blog-link"><a href="#blog4">Blog 4 – How Your Environment Shapes Success</a></div>
+        <div class="blog-link"><a href="#blog5">Blog 5 – Finding Your Right Opportunity</a></div>
+        <div class="blog-link"><a href="#blog6">Blog 6 – Building Financial Discipline</a></div>
 
-  <footer>
-    <p>&copy; 2025 Hildred Mystic</p>
-  </footer>
+        <hr style="margin: 40px 0; border-color: #444" />
 
-  <script src="js/blog-preview-auto.js"></script>
+        <!-- BLOG 1 -->
+        <h2 id="blog1">Blog 1 – Why Most People Fail to Get Rich</h2>
+        <p>Your blog 1 content goes here… (I will insert the full updated version when you're ready.)</p>
+
+        <hr style="margin: 40px 0; border-color: #444" />
+
+        <!-- BLOG 2 -->
+        <h2 id="blog2">Blog 2 – The Real Reason You’re Still Stuck</h2>
+        <p>Your blog 2 content goes here…</p>
+
+        <hr style="margin: 40px 0; border-color: #444" />
+
+        <!-- BLOG 3 -->
+        <h2 id="blog3">Blog 3 – How the Top 1% Think Differently</h2>
+        <p>Your blog 3 content goes here…</p>
+
+        <hr style="margin: 40px 0; border-color: #444" />
+
+        <!-- BLOG 4 -->
+        <h2 id="blog4">Blog 4 – How Your Environment Shapes Success</h2>
+        <p>Your blog 4 content goes here…</p>
+
+        <hr style="margin: 40px 0; border-color: #444" />
+
+        <!-- BLOG 5 -->
+        <h2 id="blog5">Blog 5 – Finding Your Right Opportunity</h2>
+        <p>Your blog 5 content goes here…</p>
+
+        <hr style="margin: 40px 0; border-color: #444" />
+
+        <!-- BLOG 6 -->
+        <h2 id="blog6">Blog 6 – Building Financial Discipline: Staying Consistent When Results Are Slow</h2>
+        <p>Your blog 6 content goes here…</p>
+
+    </div>
+
 </body>
 </html>
