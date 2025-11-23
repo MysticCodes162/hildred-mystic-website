@@ -1,149 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hildred’s Futuristic Blog</title>
-
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: #0b0b0d;
-            color: white;
-        }
-
-        /* NAVIGATION */
-        nav {
-            width: 100%;
-            background: #111;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            border-bottom: 1px solid #333;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #ff9d00;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #ffd26b;
-        }
-
-        /* MAIN CONTENT */
-        .container {
-            max-width: 950px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #16161a;
-            border-radius: 10px;
-            border: 1px solid #222;
-        }
-
-        h1, h2 {
-            color: #ffb341;
-        }
-
-        .blog-link {
-            margin: 20px 0;
-            padding: 15px 20px;
-            background: #1e1e23;
-            border: 1px solid #333;
-            border-radius: 8px;
-        }
-
-        .blog-link a {
-            text-decoration: none;
-            color: #ff9d00;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .blog-link a:hover {
-            color: #ffd26b;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <title>Hildred Mystic – AI Blog Hub</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <ul>
-            <li><a href="#blog1">Blog 1</a></li>
-            <li><a href="#blog2">Blog 2</a></li>
-            <li><a href="#blog3">Blog 3</a></li>
-            <li><a href="#blog4">Blog 4</a></li>
-            <li><a href="#blog5">Blog 5</a></li>
-            <li><a href="#blog6">Blog 6</a></li>
-        </ul>
-    </nav>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="blog1.html">Blog 1</a>
+    <a href="blog2.html">Blog 2</a>
+    <a href="blog3.html">Blog 3</a>
+    <a href="blog4.html">Blog 4</a>
+    <a href="blog5.html">Blog 5</a>
+    <a href="blog6.html">Blog 6</a>
+</nav>
 
-    <div class="container">
-        <h1>Welcome to Hildred’s Futuristic Blog</h1>
-        <p>Choose any blog below:</p>
+<div class="hero">
+    <h1>Welcome to Hildred's AI Blog Hub</h1>
+    <p>Futuristic insights, personal lessons, and powerful articles.</p>
+</div>
 
-        <!-- BLOG LINK SECTIONS -->
-        <div class="blog-link"><a href="#blog1">Blog 1 – Why Most People Fail to Get Rich</a></div>
-        <div class="blog-link"><a href="#blog2">Blog 2 – The Real Reason You’re Still Stuck</a></div>
-        <div class="blog-link"><a href="#blog3">Blog 3 – How the Top 1% Think Differently</a></div>
-        <div class="blog-link"><a href="#blog4">Blog 4 – How Your Environment Shapes Success</a></div>
-        <div class="blog-link"><a href="#blog5">Blog 5 – Finding Your Right Opportunity</a></div>
-        <div class="blog-link"><a href="#blog6">Blog 6 – Building Financial Discipline</a></div>
+<div class="blog-container">
 
-        <hr style="margin: 40px 0; border-color: #444" />
-
-        <!-- BLOG 1 -->
-        <h2 id="blog1">Blog 1 – Why Most People Fail to Get Rich</h2>
-        <p>Your blog 1 content goes here… (I will insert the full updated version when you're ready.)</p>
-
-        <hr style="margin: 40px 0; border-color: #444" />
-
-        <!-- BLOG 2 -->
-        <h2 id="blog2">Blog 2 – The Real Reason You’re Still Stuck</h2>
-        <p>Your blog 2 content goes here…</p>
-
-        <hr style="margin: 40px 0; border-color: #444" />
-
-        <!-- BLOG 3 -->
-        <h2 id="blog3">Blog 3 – How the Top 1% Think Differently</h2>
-        <p>Your blog 3 content goes here…</p>
-
-        <hr style="margin: 40px 0; border-color: #444" />
-
-        <!-- BLOG 4 -->
-        <h2 id="blog4">Blog 4 – How Your Environment Shapes Success</h2>
-        <p>Your blog 4 content goes here…</p>
-
-        <hr style="margin: 40px 0; border-color: #444" />
-
-        <!-- BLOG 5 -->
-        <h2 id="blog5">Blog 5 – Finding Your Right Opportunity</h2>
-        <p>Your blog 5 content goes here…</p>
-
-        <hr style="margin: 40px 0; border-color: #444" />
-
-        <!-- BLOG 6 -->
-        <h2 id="blog6">Blog 6 – Building Financial Discipline: Staying Consistent When Results Are Slow</h2>
-        <p>Your blog 6 content goes here…</p>
-
+    <div class="blog-card">
+        <h2>Blog 1 – AI Exposed: Not a Get-Rich Shortcut</h2>
+        <p>A deep breakdown on AI scams, false promises, and the truth about real success.</p>
+        <a href="blog1.html">Read More →</a>
     </div>
+
+    <div class="blog-card">
+        <h2>Blog 2 – The Painful Costs of Chasing Quick Money</h2>
+        <p>A personal story + hidden realities behind "easy money" automation scams.</p>
+        <a href="blog2.html">Read More →</a>
+    </div>
+
+    <div class="blog-card">
+        <h2>Blog 3 – The Real Foundation of Wealth</h2>
+        <p>Why money represents work—and why shortcuts always collapse.</p>
+        <a href="blog3.html">Read More →</a>
+    </div>
+
+    <div class="blog-card">
+        <h2>Blog 4 – Stop Copying Advice, Find YOUR Path</h2>
+        <p>How the right “key” to success is different for everyone.</p>
+        <a href="blog4.html">Read More →</a>
+    </div>
+
+    <div class="blog-card">
+        <h2>Blog 5 – Why You're Still Stuck: Hidden Truths About Success</h2>
+        <p>A powerful mindset shift every frustrated beginner should hear.</p>
+        <a href="blog5.html">Read More →</a>
+    </div>
+
+    <div class="blog-card">
+        <h2>Blog 6 – The History of Artificial Intelligence</h2>
+        <p>From 1962 origins, gaming breakthroughs, to Tesla self-driving cars.</p>
+        <a href="blog6.html">Read More →</a>
+    </div>
+
+</div>
 
 </body>
 </html>
