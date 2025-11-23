@@ -1,116 +1,86 @@
-/* ----------------------------------------------------
-   GLOBAL RESET
----------------------------------------------------- */
-* {
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    background: #111;
+    color: #eee;
     font-family: Arial, sans-serif;
 }
 
-body {
-    background: #ffffff;
-    color: #111;
-    line-height: 1.6;
-    padding-bottom: 80px;
+header {
+    text-align: center;
+    padding: 20px;
 }
 
-/* ----------------------------------------------------
-   NAVIGATION
----------------------------------------------------- */
+header h1 {
+    font-size: 2.5rem;
+    color: #ff7b00;
+    margin: 0;
+}
+
+.subtitle {
+    margin-top: -10px;
+    color: #ddd;
+}
+
 nav {
-    width: 100%;
-    background: #ff7b00;
-    padding: 15px 0;
-    text-align: center;
+    margin-top: 15px;
 }
 
 nav a {
     color: #fff;
-    margin: 0 15px;
+    margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #ff7b00;
 }
 
-/* ----------------------------------------------------
-   HERO SECTION (HOMEPAGE)
----------------------------------------------------- */
 .hero {
-    width: 100%;
-    background: #ff7b00;
-    color: white;
-    padding: 80px 20px;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.blogs-preview {
+    padding: 40px;
     text-align: center;
 }
 
-.hero h1 {
-    font-size: 44px;
-    font-weight: bold;
-}
-
-.hero p {
-    font-size: 20px;
-    margin-top: 10px;
-}
-
-/* ----------------------------------------------------
-   BLOG LIST ON HOMEPAGE
----------------------------------------------------- */
-.blog-container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 10px;
-}
-
 .blog-card {
-    background: #f5f5f5;
+    background: #222;
     padding: 20px;
-    border-radius: 12px;
-    margin-bottom: 25px;
-    border: 1px solid #ddd;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
 }
 
-.blog-card h2 {
-    font-size: 26px;
-    margin-bottom: 10px;
+.blog-card img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 .blog-card a {
+    display: inline-block;
+    margin-top: 10px;
     color: #ff7b00;
-    font-weight: bold;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .blog-card a:hover {
-    text-decoration: underline;
+    color: #ffa94d;
 }
 
-/* ----------------------------------------------------
-   BLOG PAGE STYLE
----------------------------------------------------- */
-.blog-content {
-    max-width: 900px;
-    margin: 40px auto;
+footer {
+    text-align: center;
     padding: 20px;
-}
-
-.blog-content h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.blog-content img {
-    width: 100%;
-    border-radius: 12px;
-    margin: 20px 0;
-}
-
-.blog-content p {
-    margin-bottom: 20px;
-    font-size: 18px;
+    background: #000;
+    color: #777;
+    margin-top: 40px;
 }
