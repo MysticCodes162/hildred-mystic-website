@@ -1,1 +1,116 @@
-/* Main page style content (from previous code) */
+/* ----------------------------------------------------
+   GLOBAL RESET
+---------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #111;
+    line-height: 1.6;
+    padding-bottom: 80px;
+}
+
+/* ----------------------------------------------------
+   NAVIGATION
+---------------------------------------------------- */
+nav {
+    width: 100%;
+    background: #ff7b00;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ----------------------------------------------------
+   HERO SECTION (HOMEPAGE)
+---------------------------------------------------- */
+.hero {
+    width: 100%;
+    background: #ff7b00;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* ----------------------------------------------------
+   BLOG LIST ON HOMEPAGE
+---------------------------------------------------- */
+.blog-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 10px;
+}
+
+.blog-card {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+}
+
+.blog-card h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.blog-card a {
+    color: #ff7b00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.blog-card a:hover {
+    text-decoration: underline;
+}
+
+/* ----------------------------------------------------
+   BLOG PAGE STYLE
+---------------------------------------------------- */
+.blog-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.blog-content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.blog-content img {
+    width: 100%;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.blog-content p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
