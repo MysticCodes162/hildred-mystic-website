@@ -1,66 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hildred Mystic Blog</title>
-  <link rel="stylesheet" href="css/blog.css">
+    <meta charset="UTF-8">
+    <title>Blogs - Hildred Mystic</title>
+    <link rel="stylesheet" href="mystic-style.css">
 </head>
 <body>
-  <header>
+
+<header>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
+        <a href="index.html">Home</a>
+        <a href="blog.html" class="active">Blogs</a>
     </nav>
-  </header>
+</header>
 
-  <main>
-    <h1>Hildred Mystic Blog</h1>
+<main>
+    <h1 class="page-title">Hildred Mystic Blogs</h1>
 
-    <article id="post1" data-title="Blog Post 1" data-preview="This is your first blog post." data-thumb="images/thumb1.jpg">
-      <div class="post-content">
-        <div class="thumb-container">
-          <img src="images/thumb1.jpg" alt="Blog Post 1" class="post-thumb">
-          <span class="thumb-arrow">&#8594;</span>
-        </div>
-        <div class="post-text">
-          <h2>Blog Post 1</h2>
-          <p>This is your first blog post. Write anything you want here.</p>
-        </div>
-      </div>
-    </article>
+    <section class="blog-list">
 
-    <article id="post2" data-title="Blog Post 2" data-preview="Another blog post goes here." data-thumb="images/thumb2.jpg">
-      <div class="post-content">
-        <div class="thumb-container">
-          <img src="images/thumb2.jpg" alt="Blog Post 2" class="post-thumb">
-          <span class="thumb-arrow">&#8594;</span>
-        </div>
-        <div class="post-text">
-          <h2>Blog Post 2</h2>
-          <p>Another blog post goes here. Keep your content clean and readable.</p>
-        </div>
-      </div>
-    </article>
+        <!-- BLOG 1 -->
+        <article class="blog-card">
+            <img src="images/thumb1.png" alt="Thumbnail">
+            <div>
+                <h2><a href="blogs/blog1.html">Finding Your Path: The Real Key to Success</a></h2>
+                <p>A deep look into mindset, growth, and discovering your own key to success.</p>
+            </div>
+        </article>
 
-    <article id="post3" data-title="Blog Post 3" data-preview="Third blog post preview." data-thumb="images/thumb3.jpg">
-      <div class="post-content">
-        <div class="thumb-container">
-          <img src="images/thumb3.jpg" alt="Blog Post 3" class="post-thumb">
-          <span class="thumb-arrow">&#8594;</span>
-        </div>
-        <div class="post-text">
-          <h2>Blog Post 3</h2>
-          <p>Third blog post preview goes here.</p>
-        </div>
-      </div>
-    </article>
-  </main>
+        <!-- BLOG 2 -->
+        <article class="blog-card">
+            <img src="images/thumb1.png" alt="Thumbnail">
+            <div>
+                <h2><a href="blogs/blog2.html">The Rise of AI & Its Early Origins</a></h2>
+                <p>From 1962 to now — how AI began and the pioneers who shaped the future.</p>
+            </div>
+        </article>
 
-  <footer>
-    <p>&copy; 2025 Hildred Mystic Blog</p>
-  </footer>
+        <!-- BLOG 3 -->
+        <article class="blog-card">
+            <img src="images/thumb2.png" alt="Thumbnail">
+            <div>
+                <h2><a href="blogs/blog3.html">How Gaming Transformed Artificial Intelligence</a></h2>
+                <p>Video games sparked huge breakthroughs in AI decision-making and behavior.</p>
+            </div>
+        </article>
+
+        <!-- BLOG 4 -->
+        <article class="blog-card">
+            <img src="images/thumb2.png" alt="Thumbnail">
+            <div>
+                <h2><a href="blogs/blog4.html">Tech, Branding & Gaming in the Early 2000s</a></h2>
+                <p>How the internet, advertising, and gaming collided into one revolution.</p>
+            </div>
+        </article>
+
+        <!-- BLOG 5 -->
+        <article class="blog-card">
+            <img src="images/thumb3.png" alt="Thumbnail">
+            <div>
+                <h2><a href="blogs/blog5.html">The Internet & The Explosion of Modern AI</a></h2>
+                <p>The internet supercharged machine learning and created global AI adoption.</p>
+            </div>
+        </article>
+
+        <!-- BLOG 6 -->
+        <article class="blog-card">
+            <img src="images/thumb3.png" alt="Thumbnail">
+            <div>
+                <h2><a href="blogs/blog6.html">AI on the Road: Tesla, Smartphones & The Future</a></h2>
+                <p>How Tesla, mobile tech, and robotics launched a new era of intelligence.</p>
+            </div>
+        </article>
+
+    </section>
+</main>
+
+<footer>
+    &copy; 2025 Hildred Mystic. All Rights Reserved.
+</footer>
+
 </body>
 </html>

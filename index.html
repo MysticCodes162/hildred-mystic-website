@@ -3,75 +3,89 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hildred Mystic — Motivation & AI Blog</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Mystic Website</title>
+    <link rel="stylesheet" href="mystic-style.css" />
 </head>
-<body class="homepage">
 
-<header class="homepage">
-    <h1>Hildred Mystic</h1>
-    <p class="subtitle">Motivation • Success • AI Breakdown</p>
+<script src="mystic-script.js"></script>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="blogs/blog1.html">Blog 1</a>
-        <a href="blogs/blog2.html">Blog 2</a>
-        <a href="blogs/blog3.html">Blog 3</a>
-        <a href="blogs/blog4.html">Blog 4</a>
-        <a href="blogs/blog5.html">Blog 5</a>
-        <a href="blogs/blog6.html">Blog 6</a>
-    </nav>
-</header>
+<body>
 
-<section class="hero">
-    <img src="images/hero-cartoon.png" alt="Cartoon hero"/>
-    <h2>Welcome to Your Motivational Journey</h2>
-    <p>Your growth starts today. Explore powerful stories, lessons, and AI insights.</p>
-</section>
+    <!-- =========================
+         HEADER + NAVIGATION
+    ========================== -->
+    <header class="main-header">
+        <div class="logo">MysticCodes</div>
 
-<section class="blogs-preview">
-    <h2>Latest Blogs</h2>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="blogs/blog1.html">Blog 1</a>
+            <a href="blogs/blog2.html">Blog 2</a>
+            <a href="blogs/blog3.html">Blog 3</a>
+            <a href="blogs/blog4.html">Blog 4</a>
+            <a href="blogs/blog5.html">Blog 5</a>
+            <a href="blogs/blog6.html">Blog 6</a>
+        </nav>
 
-    <div class="blog-card">
-        <img src="images/blog1.png" alt="Motivation cartoon" />
-        <h3>Blog 1 — The Truth About Success</h3>
-        <a href="blogs/blog1.html">Read More</a>
-    </div>
+        <!-- THEME TOGGLE BUTTON -->
+        <button id="theme-toggle" class="theme-btn">Light Mode</button>
+    </header>
 
-    <div class="blog-card">
-        <img src="images/blog2.png" alt="Working hard cartoon" />
-        <h3>Blog 2 — Why Quick Rich Schemes Fail</h3>
-        <a href="blogs/blog2.html">Read More</a>
-    </div>
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+    <section class="hero">
+        <h1 class="glow-title">Welcome to the Mystic Website</h1>
+        <p class="hero-text">A futuristic hub of blogs, creativity, and AI-powered insights.</p>
+        <a href="#blogs" class="btn">Explore Blogs</a>
+    </section>
 
-    <div class="blog-card">
-        <img src="images/blog3.png" alt="Discipline cartoon" />
-        <h3>Blog 3 — Discipline Over Motivation</h3>
-        <a href="blogs/blog3.html">Read More</a>
-    </div>
+    <!-- =========================
+         FEATURED BLOGS PREVIEW
+    ========================== -->
+    <section id="blogs" class="blogs-section">
+        <h2 class="section-title">Latest Blogs</h2>
 
-    <div class="blog-card">
-        <img src="images/blog4.png" alt="Success keys cartoon" />
-        <h3>Blog 4 — Finding Your Key to Success</h3>
-        <a href="blogs/blog4.html">Read More</a>
-    </div>
+        <div class="blog-grid">
 
-    <div class="blog-card">
-        <img src="images/blog5.png" alt="Social media brain cartoon" />
-        <h3>Blog 5 — What You Consume Shapes You</h3>
-        <a href="blogs/blog5.html">Read More</a>
-    </div>
+            <a href="blogs/blog1.html" class="blog-card">
+                <img src="images/thumb1.png" alt="Blog 1" />
+                <h3>Why Quick Money Fails You</h3>
+                <p>A deep look into why shortcuts never work and how real success is built.</p>
+            </a>
 
-    <div class="blog-card">
-        <img src="images/blog6.png" alt="AI history cartoon" />
-        <h3>Blog 6 — The Evolution of AI</h3>
-        <a href="blogs/blog6.html">Read More</a>
-    </div>
-</section>
+            <a href="blogs/blog2.html" class="blog-card">
+                <img src="images/thumb2.png" alt="Blog 2" />
+                <h3>The Hustle Mindset</h3>
+                <p>Why patience, consistency, and real strategy always beat shortcuts.</p>
+            </a>
 
-<footer>
-    <p>© 2025 Hildred Mystic — All Rights Reserved</p>
-</footer>
+            <a href="blogs/blog3.html" class="blog-card">
+                <img src="images/thumb3.png" alt="Blog 3" />
+                <h3>Growing Past Your Limits</h3>
+                <p>How personal growth unlocks financial opportunities you didn’t know existed.</p>
+            </a>
+
+        </div>
+
+        <div class="more-btn-box">
+            <a href="blogs/blog4.html" class="btn small-btn">Blog 4</a>
+            <a href="blogs/blog5.html" class="btn small-btn">Blog 5</a>
+            <a href="blogs/blog6.html" class="btn small-btn">Blog 6</a>
+        </div>
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer>
+        <p>© 2025 MysticCodes – All rights reserved.</p>
+    </footer>
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+    <script src="mystic-script.js"></script>
 
 </body>
 </html>
