@@ -1,8 +1,0 @@
-/* Tailwind placeholders - when you run Tailwind, replace with @tailwind directives.
-   For quick preview without Tailwind, simple fallback styles: */
-body { margin:0; font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:#050406; color:#fff}
-.text-orange-400{ color: #ff8a3a }
-.from-orange-400{ color: #ff8a3a }
-.to-orange-600{ color: #ff4b00 }
-.bg-black\/40{ background: rgba(0,0,0,0.4) }
-.border-orange-600{ border-color: rgba(255,75,0,0.9) }
