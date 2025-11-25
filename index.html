@@ -1,80 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mystic Website</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mystic Website</title>
+<link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+<header class="hero">
+<div class="content">
+<h1 class="title">Mystic Orange Theme</h1>
+<p class="subtitle">A clean futuristic website design</p>
+<a href="#section1" class="btn">Explore</a>
+</div>
+</header>
 
-    <!-- Floating_particles -->
-    <div class="particles"></div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="logo glow">Mystic</div>
+<section id="section1" class="section">
+<h2>About This Site</h2>
+<p>The orange-themed version of your Mystic website. Fully responsive and ready for GitHub Pages.</p>
+</section>
 
-        <div class="menu-btn" onclick="toggleMenu()">☰</div>
 
-        <ul class="nav-links" id="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#blogs">Blogs</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero -->
-    <section class="hero fade-in">
-        <div class="hero-content">
-            <h1 class="glow">Welcome to Mystic</h1>
-            <p class="hero-text">Futuristic. Creative. Orange-themed. AI-powered.</p>
-            <a href="#blogs" class="btn">Explore Blogs</a>
-        </div>
-    </section>
-
-    <!-- Blogs -->
-    <section id="blogs" class="blogs-section fade-in">
-        <h2 class="section-title glow">Latest Blogs</h2>
-
-        <div class="blog-container">
-
-            <div class="blog-card">
-                <div class="card-top"></div>
-                <h3>How to Make Money Online</h3>
-                <p>Explore methods to earn money quickly and efficiently.</p>
-                <a href="#" class="read-more">Read More →</a>
-            </div>
-
-            <div class="blog-card">
-                <div class="card-top"></div>
-                <h3>AI Art Techniques</h3>
-                <p>Learn how to create trending AI designs and animations.</p>
-                <a href="#" class="read-more">Read More →</a>
-            </div>
-
-            <div class="blog-card">
-                <div class="card-top"></div>
-                <h3>Building Your Website</h3>
-                <p>Simple guides for beginners starting their very first site.</p>
-                <a href="#" class="read-more">Read More →</a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Mystic Website — All Rights Reserved.</p>
-    </footer>
-
-    <!-- Script -->
-    <script>
-        function toggleMenu() {
-            document.getElementById('menu').classList.toggle('active');
-        }
-    </script>
-
+<footer class="footer">
+<p>© 2025 Mystic Design</p>
+</footer>
 </body>
 </html>
