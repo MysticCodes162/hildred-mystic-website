@@ -1,2 +1,3 @@
-// Add interactive JS here when needed
-console.log("Mystic site loaded");
+document.getElementById("navToggle").onclick = function () {
+  document.getElementById("navMenu").classList.toggle("active");
+};
