@@ -1,84 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Blogs - Hildred Mystic</title>
-    <link rel="stylesheet" href="mystic-style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog - Mystic Website</title>
+  <link rel="stylesheet" href="styles.css?v=4" />
 </head>
 <body>
 
-<header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="blog.html" class="active">Blogs</a>
+<header class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">Mystic</div>
+
+    <nav class="nav-links" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#section1">About</a>
+      <a href="index.html#contact">Contact</a>
     </nav>
+
+    <div class="nav-toggle" id="navToggle">☰</div>
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+
+   </div>
 </header>
 
-<main>
-    <h1 class="page-title">Hildred Mystic Blogs</h1>
+<section class="blog-header">
+  <h1>Our Blog</h1>
+  <p>Latest news, updates, and creative ideas.</p>
+</section>
 
-    <section class="blog-list">
+<section class="blog-container reveal">
 
-        <!-- BLOG 1 -->
-        <article class="blog-card">
-            <img src="images/thumb1.png" alt="Thumbnail">
-            <div>
-                <h2><a href="blogs/blog1.html">Finding Your Path: The Real Key to Success</a></h2>
-                <p>A deep look into mindset, growth, and discovering your own key to success.</p>
-            </div>
-        </article>
+  <div class="blog-card reveal">
+    <img src="https://via.placeholder.com/500x250" alt="Blog Image">
+    <h3>How We Designed the Mystic Theme</h3>
+    <p>A behind-the-scenes look at the design choices and style decisions.</p>
+    <a href="#" class="blog-btn">Read More</a>
+  </div>
 
-        <!-- BLOG 2 -->
-        <article class="blog-card">
-            <img src="images/thumb1.png" alt="Thumbnail">
-            <div>
-                <h2><a href="blogs/blog2.html">The Rise of AI & Its Early Origins</a></h2>
-                <p>From 1962 to now — how AI began and the pioneers who shaped the future.</p>
-            </div>
-        </article>
+  <div class="blog-card">
+    <img src="https://via.placeholder.com/500x250" alt="Blog Image">
+    <h3>Top 5 Tips for Creating Futuristic Websites</h3>
+    <p>Level up your design skills with these techniques and insights.</p>
+    <a href="#" class="blog-btn">Read More</a>
+  </div>
 
-        <!-- BLOG 3 -->
-        <article class="blog-card">
-            <img src="images/thumb2.png" alt="Thumbnail">
-            <div>
-                <h2><a href="blogs/blog3.html">How Gaming Transformed Artificial Intelligence</a></h2>
-                <p>Video games sparked huge breakthroughs in AI decision-making and behavior.</p>
-            </div>
-        </article>
+  <div class="blog-card">
+    <img src="https://via.placeholder.com/500x250" alt="Blog Image">
+    <h3>Why Orange Themes Are Trending in 2025</h3>
+    <p>Discover the psychology and beauty behind warm futuristic color palettes.</p>
+    <a href="#" class="blog-btn">Read More</a>
+  </div>
 
-        <!-- BLOG 4 -->
-        <article class="blog-card">
-            <img src="images/thumb2.png" alt="Thumbnail">
-            <div>
-                <h2><a href="blogs/blog4.html">Tech, Branding & Gaming in the Early 2000s</a></h2>
-                <p>How the internet, advertising, and gaming collided into one revolution.</p>
-            </div>
-        </article>
+</section>
 
-        <!-- BLOG 5 -->
-        <article class="blog-card">
-            <img src="images/thumb3.png" alt="Thumbnail">
-            <div>
-                <h2><a href="blogs/blog5.html">The Internet & The Explosion of Modern AI</a></h2>
-                <p>The internet supercharged machine learning and created global AI adoption.</p>
-            </div>
-        </article>
+<footer class="footer">
+  <div class="footer-icons">
 
-        <!-- BLOG 6 -->
-        <article class="blog-card">
-            <img src="images/thumb3.png" alt="Thumbnail">
-            <div>
-                <h2><a href="blogs/blog6.html">AI on the Road: Tesla, Smartphones & The Future</a></h2>
-                <p>How Tesla, mobile tech, and robotics launched a new era of intelligence.</p>
-            </div>
-        </article>
+    <a href="#" class="footer-icon">📸</a>   <!-- Instagram -->
+    <a href="#" class="footer-icon">🐦</a>   <!-- X/Twitter -->
+    <a href="#" class="footer-icon">▶️</a>   <!-- YouTube -->
+    <a href="#" class="footer-icon">🎵</a>   <!-- TikTok -->
+    <a href="mailto:youremail@example.com" class="footer-icon">✉️</a> <!-- Email -->
 
-    </section>
-</main>
+  </div>
 
-<footer>
-    &copy; 2025 Hildred Mystic. All Rights Reserved.
+  <p>© 2025 Mystic Design</p>
 </footer>
 
+script src="script.js"></script>
 </body>
 </html>
