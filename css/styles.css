@@ -367,5 +367,27 @@ a {
 .gallery-item:hover img {
   transform: scale(1.08);
 }
+/* =========================== */
+/* FOOTER ICONS                */
+/* =========================== */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-icon {
+  font-size: 1.6rem;
+  color: white;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.footer-icon:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
 
 
