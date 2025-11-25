@@ -209,4 +209,51 @@ a {
   color: var(--text-dark);
   opacity: 0.8;
 }
+/* =========================== */
+/* CONTACT SECTION             */
+/* =========================== */
+.contact-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: var(--brand-orange-light);
+  color: white;
+}
+
+.contact-section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+.contact-section p {
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: var(--radius);
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.contact-btn {
+  background: white;
+  color: var(--brand-orange);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  opacity: 0.9;
+}
 
