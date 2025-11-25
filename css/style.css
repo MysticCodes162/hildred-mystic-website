@@ -1,41 +1,80 @@
-/* HERO SECTION FIX */
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    background: #111;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.navbar .logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: orange;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: orange;
+}
+
+/* HERO SECTION */
 .hero {
     width: 100%;
-    padding: 80px 20px;       /* was the issue — reduces giant height */
-    background: linear-gradient(to bottom, #000, #0a0a0a);
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #000, #080808);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-/* Ensure no forced huge height */
-.hero {
-    height: auto !important;
-}
-
-/* Content */
 .hero-content h1 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    margin-bottom: 15px;
     color: #fff;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
     color: #dcdcdc;
+    font-size: 1.2rem;
     margin-bottom: 25px;
 }
 
-/* Button */
 .btn {
     background: orange;
     padding: 12px 26px;
-    border-radius: 6px;
     color: #000;
-    font-weight: 600;
+    border-radius: 6px;
     text-decoration: none;
+    font-weight: 600;
     transition: 0.2s ease;
 }
 
@@ -43,7 +82,61 @@
     background: #ffb347;
 }
 
-/* OPTIONAL: Fix navbar spacing if using a fixed navbar */
-body {
-    padding-top: 60px;  /* helps avoid overlap */
+/* BLOG SECTION */
+.blogs-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #111;
+}
+
+.blogs-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.blog-card {
+    background: #1a1a1a;
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    border: 1px solid #333;
+    transition: 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    border-color: orange;
+}
+
+.blog-card h3 {
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #000;
+    margin-top: 40px;
+    color: #888;
 }
