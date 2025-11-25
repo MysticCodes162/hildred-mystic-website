@@ -388,6 +388,89 @@ a {
   opacity: 1;
   transform: scale(1.15);
 }
+/* =========================== */
+/* SCROLL ANIMATIONS           */
+/* =========================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* =========================== */
+/* DARK MODE                   */
+/* =========================== */
+
+body.dark {
+  background: #0b0b0b;
+  color: #f2f2f2;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Dark Mode - Navbar */
+body.dark .navbar {
+  background: #111;
+}
+
+body.dark .nav-links a {
+  color: #f2f2f2;
+}
+
+/* Dark Mode - Hero */
+body.dark .hero {
+  background: linear-gradient(135deg, #222, #000);
+  color: #fff;
+}
+
+/* Dark Mode - Sections */
+body.dark .section,
+body.dark .features,
+body.dark .contact-section,
+body.dark .blog-header,
+body.dark .gallery-header {
+  background: #0f0f0f;
+  color: #f2f2f2;
+}
+
+/* Dark Mode Cards */
+body.dark .feature-card,
+body.dark .blog-card,
+body.dark .gallery-item {
+  background: #1a1a1a;
+  color: #fafafa;
+}
+
+/* Dark Mode Buttons */
+body.dark .btn,
+body.dark .blog-btn,
+body.dark .contact-btn {
+  background: var(--brand-orange);
+  color: white;
+}
+
+/* Dark Mode Footer */
+body.dark .footer {
+  background: #111;
+}
+
+/* Toggle Button */
+.theme-toggle {
+  margin-left: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.2);
+}
 
 
 
