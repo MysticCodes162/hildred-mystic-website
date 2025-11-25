@@ -1,8 +1,73 @@
-/* Tailwind placeholders - when you run Tailwind, replace with @tailwind directives.
-   For quick preview without Tailwind, simple fallback styles: */
-body { margin:0; font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:#050406; color:#fff}
-.text-orange-400{ color: #ff8a3a }
-.from-orange-400{ color: #ff8a3a }
-.to-orange-600{ color: #ff4b00 }
-.bg-black\/40{ background: rgba(0,0,0,0.4) }
-.border-orange-600{ border-color: rgba(255,75,0,0.9) }
+/* =========================== */
+
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+
+/* =========================== */
+/* HERO SECTION */
+/* =========================== */
+.hero {
+min-height: 75vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 40px;
+background: linear-gradient(135deg, var(--brand-orange-light), var(--brand-orange));
+color: var(--text-light);
+}
+
+
+.hero .title {
+font-size: 3.4rem;
+margin-bottom: 10px;
+}
+
+
+.hero .subtitle {
+font-size: 1.2rem;
+opacity: 0.9;
+margin-bottom: 20px;
+}
+
+
+.btn {
+padding: 12px 24px;
+background: #fff;
+border-radius: var(--radius);
+color: var(--brand-orange);
+font-weight: bold;
+transition: 0.3s;
+}
+
+
+.btn:hover {
+background: var(--text-light);
+opacity: 0.9;
+}
+
+
+/* =========================== */
+/* SECTIONS */
+/* =========================== */
+.section {
+padding: 60px 20px;
+max-width: 800px;
+margin: auto;
+text-align: center;
+}
+
+
+/* =========================== */
+/* FOOTER */
+/* =========================== */
+.footer {
+text-align: center;
+padding: 20px;
+background: var(--brand-orange);
+color: var(--text-light);
+}
