@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* MAIN PAGE ORANGE THEME */
+body.homepage {
+    background: #ff7b00;  /* main orange background */
+    color: #111;           /* dark text */
+}
+
+header.homepage h1 {
+    color: #fff;
+}
+
+header.homepage .subtitle {
+    color: #fff;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #222;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 30px;
+}
+
+.hero img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+/* BLOG PREVIEW CARDS ON MAIN PAGE */
+.blogs-preview .blog-card {
+    background: #fff;   /* white card */
+    color: #111;        /* black text */
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.blogs-preview .blog-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blogs-preview .blog-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff7b00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blogs-preview .blog-card a:hover {
+    color: #ffa94d;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* BLOG PAGES (WHITE BACKGROUND) */
+body.blogpage {
+    background: #fff;   /* white background for blogs */
+    color: #000;        /* black text */
+}
+
+.blog-content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.blog-content img {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.blog-content h2 {
+    color: #ff7b00;   /* orange headings */
+}
