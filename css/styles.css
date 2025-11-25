@@ -388,6 +388,19 @@ a {
   opacity: 1;
   transform: scale(1.15);
 }
+/* =========================== */
+/* SCROLL ANIMATIONS           */
+/* =========================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 
