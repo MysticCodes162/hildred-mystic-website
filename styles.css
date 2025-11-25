@@ -326,4 +326,46 @@ a {
 .blog-btn:hover {
   opacity: 0.85;
 }
+/* =========================== */
+/* GALLERY PAGE                */
+/* =========================== */
+.gallery-header {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--brand-orange);
+  color: white;
+}
+
+.gallery-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.gallery-grid {
+  max-width: 1100px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
 
