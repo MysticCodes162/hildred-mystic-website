@@ -78,6 +78,82 @@ a {
 }
 
 /* =========================== */
+/* NAVIGATION BAR              */
+/* =========================== */
+
+.navbar {
+  background: var(--brand-orange);
+  padding: 10px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+/* Mobile toggle */
+.nav-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: var(--brand-orange);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 0;
+    display: none;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+
+/* =========================== */
 /* FOOTER                      */
 /* =========================== */
 .footer {
