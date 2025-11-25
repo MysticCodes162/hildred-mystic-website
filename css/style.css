@@ -1,100 +1,49 @@
-/* General Styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* MAIN PAGE ORANGE THEME */
-body.homepage {
-    background: #ff7b00;  /* main orange background */
-    color: #111;           /* dark text */
-}
-
-header.homepage h1 {
-    color: #fff;
-}
-
-header.homepage .subtitle {
-    color: #fff;
-}
-
-nav a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #222;
-}
-
-/* HERO SECTION */
+/* HERO SECTION FIX */
 .hero {
-    text-align: center;
-    padding: 30px;
-}
-
-.hero img {
-    width: 300px;
-    border-radius: 15px;
-}
-
-/* BLOG PREVIEW CARDS ON MAIN PAGE */
-.blogs-preview .blog-card {
-    background: #fff;   /* white card */
-    color: #111;        /* black text */
-    padding: 20px;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 500px;
-    border-radius: 10px;
-}
-
-.blogs-preview .blog-card img {
     width: 100%;
-    border-radius: 10px;
-}
-
-.blogs-preview .blog-card a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #ff7b00;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.blogs-preview .blog-card a:hover {
-    color: #ffa94d;
-}
-
-/* FOOTER */
-footer {
+    padding: 80px 20px;       /* was the issue — reduces giant height */
+    background: linear-gradient(to bottom, #000, #0a0a0a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 20px;
-    background: #000;
+}
+
+/* Ensure no forced huge height */
+.hero {
+    height: auto !important;
+}
+
+/* Content */
+.hero-content h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
     color: #fff;
-    margin-top: 40px;
 }
 
-/* BLOG PAGES (WHITE BACKGROUND) */
-body.blogpage {
-    background: #fff;   /* white background for blogs */
-    color: #000;        /* black text */
+.hero-content p {
+    font-size: 1.2rem;
+    color: #dcdcdc;
+    margin-bottom: 25px;
 }
 
-.blog-content {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
+/* Button */
+.btn {
+    background: orange;
+    padding: 12px 26px;
+    border-radius: 6px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s ease;
 }
 
-.blog-content img {
-    width: 100%;
-    margin: 20px 0;
-    border-radius: 10px;
+.btn:hover {
+    background: #ffb347;
 }
 
-.blog-content h2 {
-    color: #ff7b00;   /* orange headings */
+/* OPTIONAL: Fix navbar spacing if using a fixed navbar */
+body {
+    padding-top: 60px;  /* helps avoid overlap */
 }
