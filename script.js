@@ -3,13 +3,13 @@ document.getElementById("navToggle").onclick = function () {
   document.getElementById("navMenu").classList.toggle("active");
 };
 
-// Scroll reveal animation
+// Smooth Reveal on Scroll (Upgraded)
 function revealOnScroll() {
-  const reveals = document.querySelectorAll(".reveal");
+  const reveals = document.querySelectorAll(".reveal, .reveal-stagger");
 
-  reveals.forEach((el) => {
+  reveals.forEach(el => {
     const rect = el.getBoundingClientRect();
-    const isVisible = rect.top < window.innerHeight - 100;
+    const isVisible = rect.top < window.innerHeight - 120;
 
     if (isVisible) {
       el.classList.add("active");
@@ -17,6 +17,7 @@ function revealOnScroll() {
   });
 }
 
+// Trigger on scroll and load
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
 
