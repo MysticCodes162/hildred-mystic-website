@@ -1,79 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery - Mystic Website</title>
-  <link rel="stylesheet" href="styles.css?v=5" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mystic Gallery</title>
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+<!-- ===========================
+     PRELOADER
+=========================== -->
 <div id="preloader" class="preloader">
   <div class="loader-circle"></div>
 </div>
+
+<!-- ===========================
+     PAGE TRANSITION
+=========================== -->
 <div class="page-transition" id="pageTransition"></div>
-<header class="gallery-header reveal">
-  <div class="gallery-grid reveal-stagger">
+
+<!-- ===========================
+     NAVBAR
+=========================== -->
+<header class="navbar">
+  <div class="nav-container">
+
     <div class="nav-logo">Mystic</div>
 
     <nav class="nav-links" id="navMenu">
       <a href="index.html">Home</a>
       <a href="blog.html">Blog</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="gallery.html" class="active">Gallery</a>
     </nav>
 
-    <div class="nav-toggle" id="navToggle">☰</div>
-
-    <button id="themeToggle" class="theme-toggle">🌙</button>
+    <div class="nav-toggle" id="navToggle">
+      <button id="themeToggle" class="theme-toggle">🌙</button>
+      ☰
+    </div>
 
   </div>
 </header>
 
+<!-- ===========================
+     GALLERY HEADER
+=========================== -->
 <section class="gallery-header reveal">
-  <h1>Gallery</h1>
-  <p>A showcase of our futuristic visuals.</p>
+  <h1>Mystic Gallery</h1>
+  <p>Browse a beautiful collection of images.</p>
 </section>
 
-<section class="gallery-grid">
-  <div class="gallery-item reveal">
-    <img src="https://via.placeholder.com/600x400" alt="Gallery Image">
+<!-- ===========================
+     GALLERY SECTION
+=========================== -->
+<section class="gallery-section reveal-stagger">
+
+  <div class="gallery-grid">
+
+    <div class="gallery-item">
+      <img src="images/sample1.jpg" alt="Gallery Image 1" />
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/sample2.jpg" alt="Gallery Image 2" />
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/sample3.jpg" alt="Gallery Image 3" />
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/sample4.jpg" alt="Gallery Image 4" />
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/sample5.jpg" alt="Gallery Image 5" />
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/sample6.jpg" alt="Gallery Image 6" />
+    </div>
+
   </div>
 
-  <div class="gallery-item reveal">
-    <img src="https://via.placeholder.com/600x400" alt="Gallery Image">
-  </div>
-
-  <div class="gallery-item reveal">
-    <img src="https://via.placeholder.com/600x400" alt="Gallery Image">
-  </div>
-
-  <div class="gallery-item reveal">
-    <img src="https://via.placeholder.com/600x400" alt="Gallery Image">
-  </div>
-
-  <div class="gallery-item reveal">
-    <img src="https://via.placeholder.com/600x400" alt="Gallery Image">
-  </div>
-
-  <div class="gallery-item reveal">
-    <img src="https://via.placeholder.com/600x400" alt="Gallery Image">
-  </div>
 </section>
 
+<!-- ===========================
+     SCROLL TOP BUTTON
+=========================== -->
+<button id="scrollTopBtn" class="scroll-top">↑</button>
+
+<!-- ===========================
+     FOOTER
+=========================== -->
 <footer class="footer">
   <div class="footer-icons">
-
-    <a href="#" class="footer-icon">📸</a>   <!-- Instagram -->
-    <a href="#" class="footer-icon">🐦</a>   <!-- X/Twitter -->
-    <a href="#" class="footer-icon">▶️</a>   <!-- YouTube -->
-    <a href="#" class="footer-icon">🎵</a>   <!-- TikTok -->
-    <a href="mailto:youremail@example.com" class="footer-icon">✉️</a> <!-- Email -->
-
+    <a href="#" class="footer-icon">📸</a>
+    <a href="#" class="footer-icon">🐦</a>
+    <a href="#" class="footer-icon">▶️</a>
+    <a href="#" class="footer-icon">🎵</a>
+    <a href="mailto:youremail@example.com" class="footer-icon">✉️</a>
   </div>
 
   <p>© 2025 Mystic Design</p>
 </footer>
-<button id="scrollTopBtn" class="scroll-top">↑</button>
+
 <script src="script.js"></script>
 </body>
 </html>
