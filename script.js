@@ -83,51 +83,10 @@ document.querySelectorAll("a").forEach(link => {
     }, 350);
   });
 });
-/* =========================== */
-/* PAGE PRELOADER              */
-/* =========================== */
+const preloader = document.getElementById("preloader");
 
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 99999;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-.loader-circle {
-  width: 55px;
-  height: 55px;
-  border: 5px solid #ff7b00;
-  border-top-color: transparent;
-  border-radius: 50%;
-  animation: spin 0.9s linear infinite;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* HIDE LOADER */
-.preloader.hide {
-  opacity: 0;
-  visibility: hidden;
-}
-
-/* DARK MODE LOADER */
-body.dark .preloader {
-  background: #0b0b0b;
-}
-
-body.dark .loader-circle {
-  border-color: #ff7b00;
-  border-top-color: transparent;
-}
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    preloader.classList.add("hide");
+  }, 500);
+});

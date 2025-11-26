@@ -614,5 +614,9 @@ body.dark .loader-circle {
   border-color: #ff7b00;
   border-top-color: transparent;
 }
+.preloader.hide {
+  opacity: 0;
+  visibility: hidden;
+}
 
 
