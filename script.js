@@ -1,9 +1,13 @@
-// Mobile navigation toggle
+/* ===========================
+   MOBILE NAVIGATION
+=========================== */
 document.getElementById("navToggle").onclick = function () {
   document.getElementById("navMenu").classList.toggle("active");
 };
 
-// Smooth Reveal on Scroll (Upgraded)
+/* ===========================
+   REVEAL ON SCROLL (UPGRADED)
+=========================== */
 function revealOnScroll() {
   const reveals = document.querySelectorAll(".reveal, .reveal-stagger");
 
@@ -17,25 +21,40 @@ function revealOnScroll() {
   });
 }
 
-// Trigger on scroll and load
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
 
+/* ===========================
+   DARK / LIGHT MODE TOGGLE
+=========================== */
 const themeToggle = document.getElementById("themeToggle");
+
 if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark");
   if (themeToggle) themeToggle.textContent = "☀️";
 }
+
 if (themeToggle) {
   themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
+
     const isDark = document.body.classList.contains("dark");
     themeToggle.textContent = isDark ? "☀️" : "🌙";
     localStorage.setItem("theme", isDark ? "dark" : "light");
-    document.body.animate([{ opacity: 0.6 }, { opacity: 1 }], { duration: 300 });
+
+    document.body.animate(
+      [
+        { opacity: 0.6 },
+        { opacity: 1 }
+      ],
+      { duration: 300 }
+    );
   });
 }
-// Scroll to top button
+
+/* ===========================
+   SCROLL TO TOP BUTTON
+=========================== */
 const scrollBtn = document.getElementById("scrollTopBtn");
 
 window.addEventListener("scroll", () => {
@@ -58,19 +77,19 @@ scrollBtn.addEventListener("click", () => {
     { duration: 300 }
   );
 });
-// Page fade transitions
+
+/* ===========================
+   PAGE FADE TRANSITIONS
+=========================== */
 const transition = document.getElementById("pageTransition");
 
-// Fade-in on load
 window.addEventListener("load", () => {
   setTimeout(() => {
     transition.classList.remove("active");
   }, 100);
 });
 
-// Fade-out on link click
 document.querySelectorAll("a").forEach(link => {
-  // Skip anchor links (#)
   const href = link.getAttribute("href");
   if (!href || href.startsWith("#")) return;
 
@@ -83,6 +102,10 @@ document.querySelectorAll("a").forEach(link => {
     }, 350);
   });
 });
+
+/* ===========================
+   PRELOADER
+=========================== */
 const preloader = document.getElementById("preloader");
 
 window.addEventListener("load", () => {
