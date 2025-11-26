@@ -34,3 +34,26 @@ if (themeToggle) {
     document.body.animate([{ opacity: 0.6 }, { opacity: 1 }], { duration: 300 });
   });
 }
+// Scroll to top button
+const scrollBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollBtn.classList.add("show");
+  } else {
+    scrollBtn.classList.remove("show");
+  }
+});
+
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+
+  scrollBtn.animate(
+    [
+      { transform: "scale(1)" },
+      { transform: "scale(0.9)" },
+      { transform: "scale(1)" }
+    ],
+    { duration: 300 }
+  );
+});

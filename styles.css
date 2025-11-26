@@ -471,6 +471,44 @@ body.dark .footer {
 .theme-toggle:hover {
   transform: scale(1.2);
 }
+/* =========================== */
+/* SCROLL TO TOP BUTTON        */
+/* =========================== */
 
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: var(--brand-orange);
+  color: white;
+  font-size: 1.5rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(255, 123, 0, 0.4);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 999;
+}
+
+.scroll-top.show {
+  display: flex;
+  opacity: 1;
+}
+
+.scroll-top:hover {
+  transform: scale(1.15);
+}
+
+/* Dark mode scroll button */
+body.dark .scroll-top {
+  background: #222;
+  color: var(--brand-orange);
+  box-shadow: 0 6px 20px rgba(255, 123, 0, 0.25);
+}
 
 
