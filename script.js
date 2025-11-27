@@ -135,3 +135,22 @@ window.addEventListener("load", () => {
     typeWriterEffect();
   }, 700);
 });
+/* ===========================
+   HERO BUTTON DELAYED ENTRANCE
+=========================== */
+
+const heroBtn = document.querySelector(".hero .btn");
+
+function showHeroButton() {
+  heroBtn.classList.add("btn-enter");
+}
+
+/* Start button entrance AFTER typing is done */
+window.addEventListener("load", () => {
+  const totalTypingTime = 90 * "Mystic Orange Theme".length;
+
+  setTimeout(() => {
+    showHeroButton();
+  }, 700 + totalTypingTime); 
+});
+
