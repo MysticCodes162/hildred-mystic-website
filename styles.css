@@ -865,5 +865,43 @@ body.dark .typewriter-container {
 body.dark .typewriter-cursor {
   color: #ff9b40;
 }
+/* ====================================
+   PREMIUM GALLERY — ZOOM + LIFT EFFECT
+==================================== */
+
+.gallery-item {
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Image zoom effect */
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.45s ease;
+  border-radius: 14px;
+}
+
+/* Combined hover effects */
+.gallery-item:hover img {
+  transform: scale(1.06); /* Zoom in */
+}
+
+.gallery-item:hover {
+  transform: translateY(-6px); /* Float upward */
+  box-shadow: 0 14px 32px rgba(0,0,0,0.22); /* Premium shadow */
+}
+
+/* Dark mode shadow tuning */
+body.dark .gallery-item:hover {
+  box-shadow: 0 14px 32px rgba(255,123,0,0.22);
+}
+.gallery-item:hover {
+  box-shadow:
+    0 14px 32px rgba(0,0,0,0.22),
+    0 0 14px rgba(255,123,0,0.25);
+}
 
 
