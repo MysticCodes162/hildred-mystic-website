@@ -113,3 +113,25 @@ window.addEventListener("load", () => {
     preloader.classList.add("hide");
   }, 500);
 });
+/* ===========================
+   TYPEWRITER EFFECT
+=========================== */
+
+const typewriterText = document.getElementById("typewriterText");
+const typeMessage = "Mystic Orange Theme";  // text to type
+let twIndex = 0;
+
+function typeWriterEffect() {
+  if (twIndex < typeMessage.length) {
+    typewriterText.textContent += typeMessage.charAt(twIndex);
+    twIndex++;
+    setTimeout(typeWriterEffect, 90); // typing speed
+  }
+}
+
+/* Start after preloader is hidden */
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    typeWriterEffect();
+  }, 700);
+});
