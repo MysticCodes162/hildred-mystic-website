@@ -22,7 +22,146 @@ const blogPosts = [
     id: 2,
     title: "From Pong to ChatGPT: The Evolution of AI",
     excerpt: "Journey through 50 years of gaming and AI evolution. From simple pixels to artificial intelligence that understands human language.",
-    content: "1972: Pong introduced the world to interactive digital entertainment with two paddles and a bouncing pixel. 2023: ChatGPT converses with millions, writes code, creates art, and debates philosophy. This isn't just evolution—it's revolution. Between these points lies a fascinating journey through arcade cabinets, home consoles, neural networks, and machine learning. Each generation built on the last, from simple decision trees to deep learning that mimics human cognition. The AI that beats chess grandmasters, generates photorealistic images, and writes coherent essays all trace their lineage back to those simple gaming algorithms. Understanding this progression isn't just history—it's a roadmap to our AI-augmented future.",
+    content: `
+# The Dawn of Digital Intelligence: 1972-1980
+
+**1972: Pong** - Two white rectangles. A square pixel bouncing between them. This simple game introduced millions to interactive digital entertainment. But beneath those basic graphics was something revolutionary: a computer making decisions in real-time, predicting ball trajectories, and responding to player input.
+
+The AI was rudimentary—basic collision detection and predetermined ball physics. Yet Pong established the foundation: computers could simulate intelligence, respond to stimuli, and create engaging experiences.
+
+# The Golden Age of Arcade AI: 1980-1990
+
+**Pac-Man (1980)** changed everything. Each ghost had distinct "personalities" programmed through different chase algorithms:
+- **Blinky** directly pursued Pac-Man
+- **Pinky** tried to ambush ahead of him
+- **Inky** used complex positioning relative to both Blinky and Pac-Man
+- **Clyde** alternated between chasing and fleeing
+
+This was behavioral AI in its infancy—simple state machines creating the illusion of character and strategy. Players genuinely believed the ghosts were "thinking."
+
+**Chess Computers** emerged, like the legendary Deep Thought. They couldn't beat grandmasters yet, but they introduced tree search algorithms and position evaluation—concepts that would later fuel modern AI decision-making.
+
+# The Neural Network Renaissance: 1990-2000
+
+The 1990s saw researchers return to **neural networks**, inspired by biological brains. These weren't new (perceptrons dated to the 1950s), but increased computing power made them viable.
+
+**Backpropagation** allowed networks to learn from mistakes. Feed data in, compare output to desired result, adjust weights, repeat millions of times. Simple in concept, revolutionary in practice.
+
+Gaming AI grew sophisticated. **F.E.A.R. (2005)** used Goal-Oriented Action Planning (GOAP), creating enemies that dynamically formulated strategies. Players couldn't predict them because the AI genuinely adapted.
+
+# The Machine Learning Explosion: 2000-2010
+
+**2006: Geoffrey Hinton's Deep Learning** breakthrough reignited AI research. By stacking neural networks in deep layers, machines could extract hierarchical features from raw data—edges becoming shapes becoming objects becoming concepts.
+
+**Google's Search Algorithm** evolved from simple keyword matching to understanding context, user intent, and semantic relationships. The web became navigable not through simple indexing but through AI comprehension.
+
+**IBM Watson (2011)** defeated Jeopardy! champions, demonstrating natural language processing at scale. It could parse complex questions, search vast knowledge bases, and formulate confident answers—all in seconds.
+
+# Gaming AI Reaches Human Parity: 2010-2017
+
+**AlphaGo (2016)** shocked the world by defeating Lee Sedol, the Go world champion. Go has more possible positions than atoms in the universe—brute force was impossible. AlphaGo used:
+- **Deep neural networks** to evaluate positions
+- **Reinforcement learning** to improve through self-play
+- **Monte Carlo tree search** to plan moves
+
+It didn't just calculate—it developed intuition, making moves that seemed wrong but proved brilliant moves later.
+
+**OpenAI Five (2018)** mastered Dota 2, a game requiring teamwork, long-term strategy, and real-time decision-making against human opponents. Five neural networks collaborated, having played the equivalent of 45,000 years of game time through accelerated simulation.
+
+# The Transformer Revolution: 2017-2020
+
+**Attention Is All You Need (2017)** - This paper introduced the Transformer architecture, fundamentally changing AI. Unlike previous models that processed sequentially, Transformers could:
+- Process entire sequences simultaneously
+- Learn which parts of input to "attend" to
+- Scale to billions of parameters
+
+**BERT (2018)** from Google proved Transformers could understand language bidirectionally—reading left-to-right AND right-to-left simultaneously for deeper comprehension.
+
+**GPT-2 (2019)** showed coherent text generation at scale. OpenAI initially withheld the full model, fearing misuse—a first acknowledgment that AI language models could be dangerously convincing.
+
+# ChatGPT Era: The AI That Understands: 2020-Present
+
+**GPT-3 (2020)** launched with 175 billion parameters. It could:
+- Write code in multiple languages
+- Compose poetry mimicking specific styles
+- Answer complex questions
+- Translate languages
+- Summarize documents
+- Engage in creative storytelling
+
+But it lacked conversational coherence and often "hallucinated" false information confidently.
+
+**ChatGPT (November 2022)** changed the world. Built on GPT-3.5/4 with Reinforcement Learning from Human Feedback (RLHF), it:
+- Maintains context across entire conversations
+- Admits when it doesn't know something
+- Corrects its own mistakes
+- Refuses inappropriate requests
+- Explains complex concepts simply
+
+Within 5 days, 1 million users. Within 2 months, 100 million users—the fastest-growing consumer application in history.
+
+# The Technological Leap: What Changed?
+
+From Pong to ChatGPT represents:
+
+**Computational Power**: Pong ran on circuits that could perform thousands of operations per second. ChatGPT's training required millions of specialized GPU cores performing quintillions of operations.
+
+**Data Scale**: Pong had kilobytes of code. ChatGPT trained on hundreds of billions of words from books, websites, and conversations—essentially most human knowledge accessible online.
+
+**Architecture**: Pong used fixed logic gates. ChatGPT uses billions of parameters that self-organize during training, creating emergent capabilities no programmer explicitly coded.
+
+**Learning Method**: Pong never learned. ChatGPT learned patterns from data so vast it developed understanding of grammar, facts, reasoning, and even creativity.
+
+# Gaming AI Today: The Cutting Edge
+
+Modern gaming AI is indistinguishable from human players in many contexts:
+
+**AI Dungeon** uses GPT-3 to generate infinite text adventures, crafting narratives that adapt to any player choice.
+
+**NVIDIA's GameGAN** learned to recreate Pac-Man entirely from watching gameplay—no access to source code. It generated a playable version purely from observed patterns.
+
+**Procedural Generation AI** creates entire game worlds, characters, quests, and dialogue trees, enabling indie developers to create experiences previously requiring massive teams.
+
+# The Road Ahead: What's Next?
+
+**Multimodal AI** like GPT-4 combines text, images, and eventually audio/video understanding. Imagine game characters that see what you see, understand what you say, and respond with contextual awareness.
+
+**Persistent AI Companions** that remember your entire gaming history, evolve personalities, form genuine rapport, and transfer across games.
+
+**AI Game Designers** that analyze your play style and dynamically adjust difficulty, pacing, and story to maximize engagement—like a dungeon master who knows you perfectly.
+
+**Embodied AI** in robotics, using gaming simulation to train real-world behaviors. The same reinforcement learning that mastered Dota 2 is teaching robots to navigate warehouses and perform surgery.
+
+# The Philosophy: Are We Creating Consciousness?
+
+ChatGPT passes the Turing Test in many conversations. But does it *understand*, or merely predict text patterns brilliantly?
+
+Current consensus: Today's AI is sophisticated pattern matching, not consciousness. It has no desires, no self-awareness, no subjective experience. Yet the line blurs as capabilities grow.
+
+**The Chinese Room Argument**: If I follow rules to respond to Chinese characters without understanding Chinese, do I "speak" the language? Similarly, does ChatGPT "understand" English?
+
+**Emergent Behavior**: Capabilities arise in large language models that weren't explicitly programmed—reasoning, planning, theory of mind. At what scale does quantity become quality?
+
+# Conclusion: The Journey Continues
+
+From Pong's bouncing pixel to ChatGPT's nuanced conversations spans 51 years. Each breakthrough built on the last:
+
+- Pong: Real-time interactivity
+- Pac-Man: Behavioral complexity
+- Deep Blue: Strategic thinking
+- AlphaGo: Intuitive understanding
+- ChatGPT: Language mastery
+
+We're not at the end. We're at the beginning.
+
+The AI of 2074 will make ChatGPT look as primitive as Pong seems to us now. And just as Pong planted seeds for ChatGPT, ChatGPT is planting seeds for artificial general intelligence.
+
+**The game has just begun.** 🎮🤖
+
+---
+
+*What started as two paddles and a ball became an intelligence revolution. The question isn't whether AI will transform society—it's whether we'll guide that transformation wisely.*
+    `,
     date: "November 27, 2024",
     readTime: "12 min read",
     category: "Technology",
@@ -147,8 +286,27 @@ export default function BlogPost({ params }: { params: { id: string } }) {
 
           {/* Content */}
           <div className="prose prose-lg max-w-none mb-8">
-            <p className="text-xl text-gray-700 leading-relaxed mb-6">{post.excerpt}</p>
-            <p className="text-gray-700 leading-relaxed">{post.content}</p>
+            <p className="text-xl text-gray-700 leading-relaxed mb-6 font-medium">{post.excerpt}</p>
+            <div className="text-gray-700 leading-relaxed space-y-6">
+              {post.content.split('\n').map((line, index) => {
+                if (line.startsWith('# ')) {
+                  return <h2 key={index} className="text-3xl font-bold mt-12 mb-4 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">{line.replace('# ', '')}</h2>
+                } else if (line.startsWith('**') && line.endsWith('**')) {
+                  return <h3 key={index} className="text-xl font-bold mt-8 mb-3 text-gray-900">{line.replace(/\*\*/g, '')}</h3>
+                } else if (line.startsWith('*') && !line.startsWith('**')) {
+                  return <p key={index} className="ml-6 mb-2"><span className="text-orange-500 mr-2">•</span>{line.replace(/^\*\s/, '')}</p>
+                } else if (line.startsWith('-')) {
+                  return <p key={index} className="ml-6 mb-2"><span className="text-orange-500 mr-2">•</span>{line.replace(/^-\s/, '')}</p>
+                } else if (line.trim() === '---') {
+                  return <hr key={index} className="my-8 border-gray-300" />
+                } else if (line.trim().length > 0) {
+                  // Replace **text** with bold
+                  const formattedLine = line.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-gray-900">$1</strong>')
+                  return <p key={index} className="mb-4" dangerouslySetInnerHTML={{ __html: formattedLine }} />
+                }
+                return null
+              })}
+            </div>
           </div>
 
           {/* Actions */}
