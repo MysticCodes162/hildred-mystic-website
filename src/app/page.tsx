@@ -10,7 +10,6 @@ export default function HybridPage() {
       {/* Bing-style Hero Background */}
       <div className="relative h-[500px] overflow-hidden bg-gradient-to-br from-orange-400 via-orange-500 to-red-500">
         <div className="absolute inset-0 bg-gradient-to-b from-orange-500/60 via-orange-600/50 to-gray-100" />
-      </div>
 
         {/* Facebook-style Top Navigation */}
         <nav className="relative z-10 bg-white/95 backdrop-blur-md shadow-sm">
@@ -305,4 +304,3 @@ export default function HybridPage() {
     </div>
   )
 }
-
