@@ -1,13 +1,120 @@
+'use client'
+
 import { Search, Home, Users, Video, ShoppingBag, Bell, Menu, Grid3x3, MessageCircle, Image, Smile, Mic, Camera, MapPin, TrendingUp, Cloud, ThumbsUp, Share2, MoreHorizontal, X, Zap, Palette, Smartphone, Mail, Phone, Github } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Card } from '@/components/ui/card'
 import Link from 'next/link'
+import { useState } from 'react'
 
 export default function HybridPage() {
+  const [showVideoModal, setShowVideoModal] = useState(false)
+  const [showImageModal, setShowImageModal] = useState(false)
+
+  const handleVideoUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (file) {
+      alert(`Video "${file.name}" ready to upload!`)
+      // You can add actual upload logic here
+    }
+  }
+
+  const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (file) {
+      alert(`Image "${file.name}" ready to upload!`)
+      // You can add actual upload logic here
+    }
+  }
+
   return (
     <div className="min-h-screen bg-gray-100">
+      {/* Video Upload Modal */}
+      {showVideoModal && (
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+          <Card className="w-full max-w-md p-6">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Upload Video</h3>
+              <Button variant="ghost" size="icon" onClick={() => setShowVideoModal(false)}>
+                <X className="h-5 w-5" />
+              </Button>
+            </div>
+            <div className="space-y-4">
+              <div className="border-2 border-dashed border-orange-300 rounded-lg p-8 text-center hover:border-orange-500 transition cursor-pointer">
+                <Video className="h-12 w-12 mx-auto mb-3 text-orange-500" />
+                <p className="text-sm text-gray-600 mb-2">Click to upload video or drag and drop</p>
+                <p className="text-xs text-gray-500">MP4, MOV, AVI up to 100MB</p>
+                <input
+                  type="file"
+                  accept="video/*"
+                  onChange={handleVideoUpload}
+                  className="hidden"
+                  id="video-upload"
+                />
+                <label htmlFor="video-upload" className="cursor-pointer">
+                  <Button className="mt-4 bg-gradient-to-r from-orange-500 to-red-500">
+                    Browse Files
+                  </Button>
+                </label>
+              </div>
+              <div>
+                <label className="text-sm font-medium mb-2 block">Or paste YouTube URL:</label>
+                <Input placeholder="https://youtube.com/watch?v=..." className="mb-3" />
+                <Button className="w-full bg-gradient-to-r from-orange-500 to-red-500">
+                  Add Video
+                </Button>
+              </div>
+            </div>
+          </Card>
+        </div>
+      )}
+
+      {/* Image Upload Modal */}
+      {showImageModal && (
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+          <Card className="w-full max-w-md p-6">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Upload Photo/Video</h3>
+              <Button variant="ghost" size="icon" onClick={() => setShowImageModal(false)}>
+                <X className="h-5 w-5" />
+              </Button>
+            </div>
+            <div className="border-2 border-dashed border-orange-300 rounded-lg p-8 text-center hover:border-orange-500 transition cursor-pointer">
+              <Image className="h-12 w-12 mx-auto mb-3 text-orange-500" />
+              <p className="text-sm text-gray-600 mb-2">Click to upload or drag and drop</p>
+              <p className="text-xs text-gray-500">PNG, JPG, GIF, MP4 up to 50MB</p>
+              <input
+                type="file"
+                accept="image/*,video/*"
+                onChange={handleImageUpload}
+                className="hidden"
+                id="image-upload"
+              />
+              <label htmlFor="image-upload" className="cursor-pointer">
+                <Button className="mt-4 bg-gradient-to-r from-orange-500 to-red-500">
+                  Browse Files
+                </Button>
+              </label>
+            </div>
+            <div className="mt-4 grid grid-cols-3 gap-2">
+              <Button variant="outline" className="text-xs">
+                <Camera className="h-4 w-4 mr-1" />
+                Camera
+              </Button>
+              <Button variant="outline" className="text-xs">
+                <Image className="h-4 w-4 mr-1" />
+                Gallery
+              </Button>
+              <Button variant="outline" className="text-xs">
+                <Video className="h-4 w-4 mr-1" />
+                Video
+              </Button>
+            </div>
+          </Card>
+        </div>
+      )}
+
       {/* Bing-style Hero Background */}
       <div className="relative h-[500px] overflow-hidden bg-gradient-to-br from-orange-400 via-orange-500 to-red-500">
         <div className="absolute inset-0 bg-gradient-to-b from-orange-500/60 via-orange-600/50 to-gray-100" />
@@ -43,10 +150,20 @@ export default function HybridPage() {
                   <Palette className="h-6 w-6 text-gray-600" />
                 </Button>
               </Link>
-              <Button variant="ghost" size="icon" className="h-12 w-20 rounded-lg hover:bg-gray-100">
-                <Mail className="h-6 w-6 text-gray-600" />
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-12 w-20 rounded-lg hover:bg-gray-100"
+                onClick={() => setShowVideoModal(true)}
+              >
+                <Video className="h-6 w-6 text-gray-600" />
               </Button>
-              <Button variant="ghost" size="icon" className="h-12 w-20 rounded-lg hover:bg-gray-100">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-12 w-20 rounded-lg hover:bg-gray-100"
+                onClick={() => setShowImageModal(true)}
+              >
                 <ShoppingBag className="h-6 w-6 text-gray-600" />
               </Button>
             </div>
