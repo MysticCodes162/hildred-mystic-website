@@ -60,6 +60,132 @@ export default function BlogPage() {
       readTime: "10 min read",
       category: "Technology",
       image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&fit=crop"
+    },
+    {
+      id: 7,
+      title: "Finding Your Inner Drive: The Power of Motivation",
+      excerpt: "Discover the secrets to staying motivated and achieving your goals. Learn how to tap into your inner strength and overcome obstacles.",
+      date: "November 12, 2024",
+      readTime: "6 min read",
+      category: "Motivation",
+      image: "https://images.unsplash.com/photo-1519834785169-98be25ec3f84?w=800&fit=crop"
+    },
+    {
+      id: 8,
+      title: "Life Lessons: Embracing Change and Growth",
+      excerpt: "Change is inevitable, but growth is optional. Explore how to embrace life's transitions and become the best version of yourself.",
+      date: "November 10, 2024",
+      readTime: "7 min read",
+      category: "Life",
+      image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&fit=crop"
+    },
+    {
+      id: 9,
+      title: "From Pong to ChatGPT: The Evolution of AI",
+      excerpt: "Journey through the incredible evolution of artificial intelligence, from simple video games to sophisticated language models that understand us.",
+      date: "November 8, 2024",
+      readTime: "12 min read",
+      category: "Technology",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&fit=crop"
+    },
+    {
+      id: 10,
+      title: "Celebrate Your Uniqueness: Be Yourself",
+      excerpt: "In a world of conformity, your uniqueness is your superpower. Learn why being different is not just okay, it's essential.",
+      date: "November 5, 2024",
+      readTime: "5 min read",
+      category: "Life",
+      image: "https://images.unsplash.com/photo-1502139214982-d0ad755818d8?w=800&fit=crop"
+    },
+    {
+      id: 11,
+      title: "The Art of Persistence: Never Give Up",
+      excerpt: "Success isn't about never failing, it's about never giving up. Discover strategies to keep pushing forward even when things get tough.",
+      date: "November 3, 2024",
+      readTime: "8 min read",
+      category: "Motivation",
+      image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=800&fit=crop"
+    },
+    {
+      id: 12,
+      title: "Mindful Living: Finding Balance in Chaos",
+      excerpt: "In our fast-paced world, mindfulness is more important than ever. Learn practical techniques to find peace and balance in daily life.",
+      date: "November 1, 2024",
+      readTime: "6 min read",
+      category: "Life",
+      image: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=800&fit=crop"
+    },
+    {
+      id: 13,
+      title: "AI and Creativity: The New Renaissance",
+      excerpt: "Artificial intelligence is not replacing human creativity—it's enhancing it. Explore how AI tools are revolutionizing creative industries.",
+      date: "October 29, 2024",
+      readTime: "9 min read",
+      category: "Technology",
+      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&fit=crop"
+    },
+    {
+      id: 14,
+      title: "Your Story Matters: Embracing Your Journey",
+      excerpt: "Every person's journey is unique and valuable. Learn how to honor your story and use your experiences to inspire and help others.",
+      date: "October 27, 2024",
+      readTime: "7 min read",
+      category: "Life",
+      image: "https://images.unsplash.com/photo-1501290836836-b9451e2169a3?w=800&fit=crop"
+    },
+    {
+      id: 15,
+      title: "Designing for Accessibility: Web for Everyone",
+      excerpt: "Great design is inclusive design. Discover essential principles and techniques to make your websites accessible to all users.",
+      date: "October 25, 2024",
+      readTime: "8 min read",
+      category: "Design",
+      image: "https://images.unsplash.com/photo-1573167243872-43c6433b9d40?w=800&fit=crop"
+    },
+    {
+      id: 16,
+      title: "Morning Rituals of Highly Successful People",
+      excerpt: "How you start your day determines how you live your day. Explore proven morning routines that set you up for success.",
+      date: "October 22, 2024",
+      readTime: "6 min read",
+      category: "Motivation",
+      image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=800&fit=crop"
+    },
+    {
+      id: 17,
+      title: "The Machine Learning Revolution: Past, Present, Future",
+      excerpt: "From basic pattern recognition to deep learning networks, explore how machine learning has transformed technology and society.",
+      date: "October 20, 2024",
+      readTime: "11 min read",
+      category: "Technology",
+      image: "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=800&fit=crop"
+    },
+    {
+      id: 18,
+      title: "Breaking Free from Comparison: Your Own Path",
+      excerpt: "Stop measuring yourself against others. Discover how to define success on your own terms and walk your unique path with confidence.",
+      date: "October 18, 2024",
+      readTime: "7 min read",
+      category: "Life",
+      image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&fit=crop"
+    },
+    {
+      id: 19,
+      title: "Gradient Magic: Modern UI Design Techniques",
+      excerpt: "Gradients are back and better than ever. Master the art of creating stunning, modern gradient designs that captivate users.",
+      date: "October 15, 2024",
+      readTime: "5 min read",
+      category: "Design",
+      image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&fit=crop"
+    },
+    {
+      id: 20,
+      title: "Resilience: Bouncing Back Stronger Than Ever",
+      excerpt: "Life will knock you down, but resilience will lift you up. Learn how to develop unshakeable mental toughness and bounce back from setbacks.",
+      date: "October 12, 2024",
+      readTime: "8 min read",
+      category: "Motivation",
+      image: "https://images.unsplash.com/photo-1494548162494-384bba4ab999?w=800&fit=crop"
     }
   ]
 
@@ -256,7 +382,7 @@ export default function BlogPage() {
             <Card className="p-4 shadow-md">
               <h3 className="font-semibold text-gray-700 mb-3">Categories</h3>
               <div className="space-y-2">
-                {['Tutorial', 'Design', 'Performance', 'Mobile', 'Technology'].map((cat) => (
+                {['Tutorial', 'Design', 'Performance', 'Mobile', 'Technology', 'Motivation', 'Life'].map((cat) => (
                   <Button key={cat} variant="ghost" className="w-full justify-start hover:bg-orange-50 hover:text-orange-600">
                     {cat}
                   </Button>
@@ -296,3 +422,4 @@ export default function BlogPage() {
     </div>
   )
 }
+
