@@ -11,7 +11,7 @@ export default function BlogPage() {
       id: 1,
       title: "Embrace Your Inner Difference: Why Being Unique is Your Superpower",
       excerpt: "Stop trying to fit in. Your differences aren't flaws—they're your greatest strengths. Learn how to celebrate what makes you uniquely you.",
-      date: "November 28, 2024",
+      date: "November 28, 2025",
       readTime: "7 min read",
       category: "Life",
       image: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=800&fit=crop"
@@ -20,7 +20,7 @@ export default function BlogPage() {
       id: 2,
       title: "From Pong to ChatGPT: The Evolution of AI",
       excerpt: "Journey through 50 years of gaming and AI evolution. From simple pixels to artificial intelligence that understands human language.",
-      date: "November 27, 2024",
+      date: "November 27, 2025",
       readTime: "12 min read",
       category: "Technology",
       image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&fit=crop"
@@ -29,7 +29,7 @@ export default function BlogPage() {
       id: 3,
       title: "Why Your Struggle is Actually Your Story",
       excerpt: "Every challenge you face is writing your unique narrative. Learn to reframe obstacles as opportunities for growth.",
-      date: "November 26, 2024",
+      date: "NOVEMBER 26, 2025",
       readTime: "6 min read",
       category: "Motivation",
       image: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?w=800&fit=crop"
@@ -38,7 +38,7 @@ export default function BlogPage() {
       id: 4,
       title: "The Power of Consistent Small Steps",
       excerpt: "Forget overnight success. Real transformation happens through daily 1% improvements. Here's how to build unstoppable momentum.",
-      date: "November 25, 2024",
+      date: "NOVEMBER 25, 2025",
       readTime: "8 min read",
       category: "Motivation",
       image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&fit=crop"
@@ -47,7 +47,7 @@ export default function BlogPage() {
       id: 5,
       title: "Modern Web Design Trends 2025",
       excerpt: "Explore the latest trends in web design including gradients, minimalism, and responsive layouts that make your website stand out.",
-      date: "November 24, 2024",
+      date: "NOVEMBER 24, 2025",
       readTime: "8 min read",
       category: "Design",
       image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&fit=crop"
@@ -56,7 +56,7 @@ export default function BlogPage() {
       id: 6,
       title: "Your Comfort Zone is a Beautiful Prison",
       excerpt: "Growth lives outside familiarity. Discover how to break free from comfort and step into the person you're meant to become.",
-      date: "November 23, 2024",
+      date: "NOVEMBER 23, 2025",
       readTime: "5 min read",
       category: "Life",
       image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&fit=crop"
@@ -65,7 +65,7 @@ export default function BlogPage() {
       id: 7,
       title: "The AI Revolution: What It Means for Your Future",
       excerpt: "AI isn't replacing humans—it's amplifying us. Learn how to leverage artificial intelligence to enhance your skills and creativity.",
-      date: "November 22, 2024",
+      date: "NOVEMBER 22, 2025",
       readTime: "10 min read",
       category: "Technology",
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&fit=crop"
@@ -74,7 +74,7 @@ export default function BlogPage() {
       id: 8,
       title: "Stop Comparing, Start Creating",
       excerpt: "Social media comparison is stealing your joy. Here's how to focus on your own journey and create something meaningful.",
-      date: "November 21, 2024",
+      date: "NOVEMBER 21, 2025",
       readTime: "6 min read",
       category: "Life",
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&fit=crop"
@@ -83,7 +83,7 @@ export default function BlogPage() {
       id: 9,
       title: "Building Fast & Responsive Websites",
       excerpt: "Performance is key. Discover techniques to optimize your website speed and create seamless user experiences across all devices.",
-      date: "November 20, 2024",
+      date: "NOVEMBER 20, 2025",
       readTime: "6 min read",
       category: "Performance",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&fit=crop"
@@ -92,7 +92,7 @@ export default function BlogPage() {
       id: 10,
       title: "Your Authentic Self: The Only Version Worth Being",
       excerpt: "Authenticity isn't a trend—it's freedom. Learn why pretending to be someone else is the heaviest burden you'll ever carry.",
-      date: "November 19, 2024",
+      date: "NOVEMBER 19, 2025",
       readTime: "7 min read",
       category: "Life",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&fit=crop"
@@ -101,7 +101,7 @@ export default function BlogPage() {
       id: 11,
       title: "The Science of Breaking Bad Habits",
       excerpt: "Habits aren't broken by willpower—they're rewired by understanding. Discover the neuroscience behind lasting behavioral change.",
-      date: "November 18, 2024",
+      date: "NOVEMBER 18, 2025",
       readTime: "9 min read",
       category: "Motivation",
       image: "https://images.unsplash.com/photo-1499728603263-13726abce5fd?w=800&fit=crop"
@@ -110,7 +110,7 @@ export default function BlogPage() {
       id: 12,
       title: "Gaming's Evolution: From Arcade to AI Companions",
       excerpt: "How video games evolved from simple entertainment to complex AI-driven experiences that blur the line between reality and virtual worlds.",
-      date: "November 17, 2024",
+      date: "NOVEMBER 17, 2025",
       readTime: "11 min read",
       category: "Technology",
       image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&fit=crop"
@@ -119,7 +119,7 @@ export default function BlogPage() {
       id: 13,
       title: "Failure is Feedback, Not Final",
       excerpt: "Every successful person has failed more than you've tried. Reframe failure as data, not destiny.",
-      date: "November 16, 2024",
+      date: "NOVEMBER 16, 2025",
       readTime: "5 min read",
       category: "Motivation",
       image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&fit=crop"
@@ -128,7 +128,7 @@ export default function BlogPage() {
       id: 14,
       title: "Color Psychology in Web Design",
       excerpt: "Understanding how colors affect user behavior. Learn why the orange theme creates energy and enthusiasm for your brand.",
-      date: "November 15, 2024",
+      date: "NOVEMBER 15, 2025",
       readTime: "7 min read",
       category: "Design",
       image: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=800&fit=crop"
@@ -137,7 +137,7 @@ export default function BlogPage() {
       id: 15,
       title: "The Introvert's Guide to Owning Your Quiet Power",
       excerpt: "Loud doesn't mean strong. Discover how introverts can leverage their natural strengths in an extroverted world.",
-      date: "November 14, 2024",
+      date: "NOVEMBER 14, 2025",
       readTime: "6 min read",
       category: "Life",
       image: "https://images.unsplash.com/photo-1516534775068-ba3e7458af70?w=800&fit=crop"
@@ -146,7 +146,7 @@ export default function BlogPage() {
       id: 16,
       title: "Why Perfect is the Enemy of Progress",
       excerpt: "Perfectionism paralyzes potential. Learn to ship, iterate, and improve instead of waiting for the perfect moment.",
-      date: "November 13, 2024",
+      date: "NOVEMBER 13, 2025",
       readTime: "5 min read",
       category: "Motivation",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&fit=crop"
@@ -155,7 +155,7 @@ export default function BlogPage() {
       id: 17,
       title: "Machine Learning Explained Simply",
       excerpt: "No PhD required. Understand how AI learns from data and why it's transforming everything from your phone to your career.",
-      date: "November 12, 2024",
+      date: "NOVEMBER 12, 2025",
       readTime: "8 min read",
       category: "Technology",
       image: "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=800&fit=crop"
@@ -164,7 +164,7 @@ export default function BlogPage() {
       id: 18,
       title: "Mobile-First Design Principles",
       excerpt: "With mobile traffic dominating, learn how to design websites that work perfectly on smartphones and scale up beautifully.",
-      date: "November 11, 2024",
+      date: "NOVEMBER 11, 2025",
       readTime: "5 min read",
       category: "Mobile",
       image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&fit=crop"
@@ -173,7 +173,7 @@ export default function BlogPage() {
       id: 19,
       title: "Your Weirdness is Your Brand",
       excerpt: "The things you hide about yourself? They're exactly what makes you memorable. Learn to monetize your uniqueness.",
-      date: "November 10, 2024",
+      date: "NOVEMBER 10, 2025",
       readTime: "7 min read",
       category: "Life",
       image: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800&fit=crop"
@@ -182,7 +182,7 @@ export default function BlogPage() {
       id: 20,
       title: "Getting Started with Mystic Design",
       excerpt: "Learn how to use the Mystic Orange Theme for your next project. This comprehensive guide covers everything from installation to customization.",
-      date: "November 9, 2024",
+      date: "NOVEMBER 9, 2025",
       readTime: "5 min read",
       category: "Tutorial",
       image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&fit=crop"

@@ -12,7 +12,7 @@ const blogPosts = [
     title: "Embrace Your Inner Difference: Why Being Unique is Your Superpower",
     excerpt: "Stop trying to fit in. Your differences aren't flaws—they're your greatest strengths. Learn how to celebrate what makes you uniquely you.",
     content: "In a world that constantly pushes conformity, your uniqueness is your most valuable asset. Every successful person, every groundbreaking innovation, every cultural shift started with someone who dared to be different. Your quirks, your unconventional thoughts, your unique perspective—these aren't things to hide. They're your competitive advantage. The market rewards differentiation, not imitation. The world needs your authentic voice, not another copy. Stop dimming your light to make others comfortable. Your differences are precisely what will make you unforgettable.",
-    date: "November 28, 2024",
+    date: "NOVEMBER 28, 2025",
     readTime: "7 min read",
     category: "Life",
     image: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=1200&fit=crop",
@@ -162,7 +162,7 @@ The AI of 2074 will make ChatGPT look as primitive as Pong seems to us now. And 
 
 *What started as two paddles and a ball became an intelligence revolution. The question isn't whether AI will transform society—it's whether we'll guide that transformation wisely.*
     `,
-    date: "November 27, 2024",
+    date: "NOVEMBER 27, 2025",
     readTime: "12 min read",
     category: "Technology",
     image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200&fit=crop",
@@ -173,7 +173,7 @@ The AI of 2074 will make ChatGPT look as primitive as Pong seems to us now. And 
     title: "Why Your Struggle is Actually Your Story",
     excerpt: "Every challenge you face is writing your unique narrative. Learn to reframe obstacles as opportunities for growth.",
     content: "Your struggles aren't obstacles to your success—they ARE your success story. The entrepreneur who failed three times before building a unicorn. The artist rejected by dozens of galleries before their first exhibition. The athlete who overcame injury to win gold. Their struggles didn't delay their success; they created it. Every challenge teaches resilience, builds character, and develops the exact skills needed for future victories. Your current struggle is writing tomorrow's testimonial. The question isn't whether you'll face difficulties—it's whether you'll let them define you or refine you. Choose refinement. Your struggle is your story, and every great story needs conflict before the climax.",
-    date: "November 26, 2024",
+    date: "NOVEMBER 26, 2025",
     readTime: "6 min read",
     category: "Motivation",
     image: "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?w=1200&fit=crop",
